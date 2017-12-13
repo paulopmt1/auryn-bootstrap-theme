@@ -1,0 +1,35 @@
+.alert {
+    font-size: $font-size-sm;
+    font-weight: 300;
+    color: $white;
+
+    &-success {
+        &, > th, > td {
+            background-color: $success;
+        }
+    }
+
+    &-info {
+        &, > th, > td {
+            background-color: $info;
+        }
+    }
+
+    &-danger {
+        &, > th, > td {
+            background-color: $danger;
+        }
+    }
+
+    &-warning {
+        &, > th, > td {
+            background-color: $warning;
+        }
+    }
+
+    .alert-link {
+        font-weight: normal;
+        color: #fff;
+        text-decoration: underline;
+    }
+}

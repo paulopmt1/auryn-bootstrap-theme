@@ -1,0 +1,14 @@
+.arn-bootstrap-theme {
+	@import 'fonts';
+	@import 'variables';
+	@import '../node_modules/bootstrap/scss/bootstrap';
+	@import 'alerts';
+	@import 'buttons';
+	@import 'forms';
+	@import 'global';
+	@import 'navbars';
+	@import 'navegation';
+	@import 'progress-bars';
+	@import 'tables';
+	@import 'typography';
+}
