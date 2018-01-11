@@ -29,7 +29,22 @@ input[type="tel"]:focus,
 input[type="text"]:focus,
 input[type="url"]:focus,
 textarea:focus,
-select:focus {
+select:focus,
+label:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+input[type="email"]:active,
+input[type="number"]:active,
+input[type="password"]:active,
+input[type="search"]:active,
+input[type="tel"]:active,
+input[type="text"]:active,
+input[type="url"]:active,
+textarea:active,
+select:active,
+label:active {
     outline: none;
     box-shadow: none !important;
 }
