@@ -5285,7 +5285,9 @@
     padding: 0;
     margin: 0; }
   .arn-bootstrap button:focus,
-  .arn-bootstrap input[type='button']:focus {
+  .arn-bootstrap button:active,
+  .arn-bootstrap input[type='button']:focus,
+  .arn-bootstrap input[type='button']:active {
     outline: none;
     box-shadow: none !important; }
   .arn-bootstrap .btn {
@@ -5317,7 +5319,20 @@
   .arn-bootstrap input[type="text"]:focus,
   .arn-bootstrap input[type="url"]:focus,
   .arn-bootstrap textarea:focus,
-  .arn-bootstrap select:focus {
+  .arn-bootstrap select:focus,
+  .arn-bootstrap label:focus {
+    outline: none;
+    box-shadow: none !important; }
+  .arn-bootstrap input[type="email"]:active,
+  .arn-bootstrap input[type="number"]:active,
+  .arn-bootstrap input[type="password"]:active,
+  .arn-bootstrap input[type="search"]:active,
+  .arn-bootstrap input[type="tel"]:active,
+  .arn-bootstrap input[type="text"]:active,
+  .arn-bootstrap input[type="url"]:active,
+  .arn-bootstrap textarea:active,
+  .arn-bootstrap select:active,
+  .arn-bootstrap label:active {
     outline: none;
     box-shadow: none !important; }
   .arn-bootstrap .modal {
