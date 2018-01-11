@@ -1,8 +1,8 @@
 .arn-bootstrap {
 
 	// Auryn CSS
-	@import 'fonts';
-	@import 'variables';
+	@import "fonts";
+	@import "variables";
 
 	// Required BOOTSTRAP
 	@import "node_modules/bootstrap/scss/functions";
@@ -28,17 +28,18 @@
 	@import "node_modules/bootstrap/scss/custom-forms";
 	@import "node_modules/bootstrap/scss/nav";
 	@import "node_modules/bootstrap/scss/reboot";
+	@import "node_modules/bootstrap/scss/typography";
 
 	// Auryn CSS
-	@import 'global';
-	@import 'buttons';
-	@import 'inputs';
-	@import 'navbars';
-	@import 'navegation';
-	@import 'progress-bars';
-	@import 'tables';
-	@import 'typography';
-	@import 'modal';
-	@import 'forms';
+	@import "global";
+	@import "buttons";
+	@import "inputs";
+	@import "navbars";
+	@import "navegation";
+	@import "progress-bars";
+	@import "tables";
+	@import "typography";
+	@import "modal";
+	@import "forms";
 	
 }
