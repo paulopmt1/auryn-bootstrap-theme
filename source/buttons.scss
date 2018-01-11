@@ -1,6 +1,8 @@
 
 button:focus,
-input[type='button']:focus {
+button:active,
+input[type='button']:focus,
+input[type='button']:active {
     outline: none;
     box-shadow: none !important;
 }
