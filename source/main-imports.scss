@@ -14,6 +14,7 @@
 	@import "node_modules/bootstrap/scss/forms";
 	@import "node_modules/bootstrap/scss/buttons";
 	@import "node_modules/bootstrap/scss/alert";
+	@import "node_modules/bootstrap/scss/close";
 	@import "node_modules/bootstrap/scss/modal";
 	@import "node_modules/bootstrap/scss/card";
 	@import "node_modules/bootstrap/scss/transitions";
@@ -36,5 +37,7 @@
 	@import 'progress-bars';
 	@import 'tables';
 	@import 'typography';
+	@import 'modal';
+	@import 'forms';
 	
 }
