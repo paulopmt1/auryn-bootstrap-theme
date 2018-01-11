@@ -5284,8 +5284,13 @@
     list-style: none;
     padding: 0;
     margin: 0; }
+  .arn-bootstrap .active {
+    outline: none;
+    box-shadow: none !important; }
   .arn-bootstrap button:focus,
   .arn-bootstrap button:active,
+  .arn-bootstrap .btn:focus,
+  .arn-bootstrap .btn:active,
   .arn-bootstrap input[type='button']:focus,
   .arn-bootstrap input[type='button']:active {
     outline: none;
