@@ -4303,6 +4303,10 @@
     display: none !important; }
   .arn-bootstrap {
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
+  .arn-bootstrapul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
   .arn-bootstrap button:focus,
   .arn-bootstrap input[type='button']:focus {
     outline: none;
