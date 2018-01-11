@@ -1,6 +1,8 @@
 
 button:focus,
 button:active,
+.btn:focus,
+.btn:active,
 input[type='button']:focus,
 input[type='button']:active {
     outline: none;
