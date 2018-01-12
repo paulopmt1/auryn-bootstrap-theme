@@ -5298,93 +5298,47 @@
   .arn-bootstrap .btn {
     border-radius: 2px; }
   .arn-bootstrap select {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    background-color: #fff;
-    padding: 5px 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    color: #333;
     background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzODYuMjU3IDM4Ni4yNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni4yNTcgMzg2LjI1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9IjAsOTYuODc5IDE5My4xMjksMjg5LjM3OSAzODYuMjU3LDk2Ljg3OSAiIGZpbGw9IiM4MDgwODAiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==");
-    background-position: top 10px right 2px, top 22px right 9px;
+    background-position: top 13px right 11px;
     background-size: 10px;
     background-repeat: no-repeat;
-    outline: none;
-    cursor: pointer; }
-  .arn-bootstrap textarea {
-    width: 100%;
-    max-width: 100%;
-    min-height: 100px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 0 auto 50px;
-    color: #333; }
-  .arn-bootstrap input {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    margin: 0;
-    color: #333;
-    padding: 12px 5px;
     outline: none; }
-  .arn-bootstrap label.radio {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; }
-  .arn-bootstrap label.radio::before {
-    content: "";
-    width: 28px;
-    height: 28px;
-    margin: 0;
-    padding: 0;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PGRlZnM+PHBhdGggaWQ9Im53MzlhIiBkPSJNMjI1IDE2MWE3IDcgMCAxIDEgMCAxNCA3IDcgMCAwIDEgMC0xNHoiLz48Y2xpcFBhdGggaWQ9Im53MzliIj48dXNlIGZpbGw9IiNmZmYiIHhsaW5rOmhyZWY9IiNudzM5YSIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMTcgLTE2MCkiPjx1c2UgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIwIiBzdHJva2U9IiNhOWE5YTkiIHN0cm9rZS1taXRlcmxpbWl0PSI1MCIgc3Ryb2tlLXdpZHRoPSIyLjQ0IiBjbGlwLXBhdGg9InVybCgmcXVvdDsjbnczOWImcXVvdDspIiB4bGluazpocmVmPSIjbnczOWEiLz48L2c+PC9nPjwvc3ZnPg==");
-    background-repeat: no-repeat;
-    background-position: center;
-    outline: none;
-    display: block; }
-  .arn-bootstrap input[type=radio]:not(old) {
-    display: none; }
-  .arn-bootstrap input[type=radio]:not(old):checked + label.radio:before {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PGRlZnM+PHBhdGggaWQ9Im5haHFhIiBkPSJNMjI1IDExNWE3IDcgMCAxIDEgMCAxNCA3IDcgMCAwIDEgMC0xNHoiLz48cGF0aCBpZD0ibmFocWMiIGQ9Ik0yMjUgMTE4YTQgNCAwIDEgMSAwIDggNCA0IDAgMCAxIDAtOHoiLz48Y2xpcFBhdGggaWQ9Im5haHFiIj48dXNlIGZpbGw9IiNmZmYiIHhsaW5rOmhyZWY9IiNuYWhxYSIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMTcgLTExNCkiPjx1c2UgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIwIiBzdHJva2U9IiMwMGFjZDYiIHN0cm9rZS1taXRlcmxpbWl0PSI1MCIgc3Ryb2tlLXdpZHRoPSIyLjQ0IiBjbGlwLXBhdGg9InVybCgmcXVvdDsjbmFocWImcXVvdDspIiB4bGluazpocmVmPSIjbmFocWEiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxNyAtMTE0KSI+PHVzZSBmaWxsPSIjMDBhY2Q2IiB4bGluazpocmVmPSIjbmFocWMiLz48L2c+PC9nPjwvc3ZnPg=="); }
-  .arn-bootstrap input[type='checkbox'],
-  .arn-bootstrap input[type='radio'] {
-    display: inline; }
-  .arn-bootstrap input[type='email'],
-  .arn-bootstrap input[type='number'],
-  .arn-bootstrap input[type='password'],
-  .arn-bootstrap input[type='search'],
-  .arn-bootstrap input[type='tel'],
-  .arn-bootstrap input[type='text'],
-  .arn-bootstrap input[type='url'],
-  .arn-bootstrap textarea {
+  .arn-bootstrap input[type="email"],
+  .arn-bootstrap input[type="number"],
+  .arn-bootstrap input[type="password"],
+  .arn-bootstrap input[type="search"],
+  .arn-bootstrap input[type="tel"],
+  .arn-bootstrap input[type="text"],
+  .arn-bootstrap input[type="url"],
+  .arn-bootstrap textarea,
+  .arn-bootstrap select {
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    box-shadow: none;
-    box-sizing: inherit;
-    padding: 5px; }
-  .arn-bootstrap input[type='email']:focus,
-  .arn-bootstrap input[type='number']:focus,
-  .arn-bootstrap input[type='password']:focus,
-  .arn-bootstrap input[type='search']:focus,
-  .arn-bootstrap input[type='tel']:focus,
-  .arn-bootstrap input[type='text']:focus,
-  .arn-bootstrap input[type='url']:focus,
+    appearance: none; }
+  .arn-bootstrap input[type="email"]:focus,
+  .arn-bootstrap input[type="number"]:focus,
+  .arn-bootstrap input[type="password"]:focus,
+  .arn-bootstrap input[type="search"]:focus,
+  .arn-bootstrap input[type="tel"]:focus,
+  .arn-bootstrap input[type="text"]:focus,
+  .arn-bootstrap input[type="url"]:focus,
   .arn-bootstrap textarea:focus,
-  .arn-bootstrap select:focus {
-    border: none;
-    border-bottom: 1px solid #888;
+  .arn-bootstrap select:focus,
+  .arn-bootstrap label:focus {
     outline: none;
     box-shadow: none !important; }
-  .arn-bootstrap textarea {
-    min-height: 6.5rem; }
+  .arn-bootstrap input[type="email"]:active,
+  .arn-bootstrap input[type="number"]:active,
+  .arn-bootstrap input[type="password"]:active,
+  .arn-bootstrap input[type="search"]:active,
+  .arn-bootstrap input[type="tel"]:active,
+  .arn-bootstrap input[type="text"]:active,
+  .arn-bootstrap input[type="url"]:active,
+  .arn-bootstrap textarea:active,
+  .arn-bootstrap select:active,
+  .arn-bootstrap label:active {
+    outline: none;
+    box-shadow: none !important; }
   .arn-bootstrap .modal {
     background: rgba(0, 0, 0, 0.5); }
   .arn-bootstrap .switch {
