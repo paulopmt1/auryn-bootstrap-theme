@@ -59,8 +59,10 @@ input {
 }
 
 label.arn-custom-label-radio {
+    align-items: center;
     width: 100%;
     display: flex;
+    justify-content: flex-start;
     text-indent: 28px;
 }
 
