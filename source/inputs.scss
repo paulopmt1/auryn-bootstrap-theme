@@ -61,8 +61,7 @@ input {
 label.arn-custom-label-radio {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    text-indent: 28px;
 }
 
 label.arn-custom-label-radio::before {
@@ -77,6 +76,7 @@ label.arn-custom-label-radio::before {
     border-radius: $custom-radio-indicator-border-radius;
     outline: none;
     display: block;
+    position: absolute;
 }
 
 input[type=radio].arn-custom-label-radio {

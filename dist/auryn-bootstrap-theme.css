@@ -5350,8 +5350,7 @@
   .arn-bootstrap label.arn-custom-label-radio {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center; }
+    text-indent: 28px; }
   .arn-bootstrap label.arn-custom-label-radio::before {
     content: "";
     margin: 0;
@@ -5363,7 +5362,8 @@
     background-color: #dee2e6;
     border-radius: 50%;
     outline: none;
-    display: block; }
+    display: block;
+    position: absolute; }
   .arn-bootstrap input[type=radio].arn-custom-label-radio {
     display: none; }
   .arn-bootstrap input[type=radio].arn-custom-label-radio:checked + label.arn-custom-label-radio::before {
