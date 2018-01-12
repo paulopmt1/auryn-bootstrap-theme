@@ -47,3 +47,52 @@ label:active {
     outline: none;
     box-shadow: none !important;
 }
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $gray-400;
+    margin: 0;
+    color: $gray-800;
+    padding: 12px 5px;
+    outline: none;
+}
+
+label.arn-custom-label-radio {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+label.arn-custom-label-radio::before {
+    content: "";
+    margin: 0;
+    padding: 0;
+    width: $custom-control-indicator-size;
+    height: $custom-control-indicator-size;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: $custom-control-indicator-bg;
+    border-radius: $custom-radio-indicator-border-radius;
+    outline: none;
+    display: block;
+}
+
+input[type=radio].arn-custom-label-radio {
+    display: none;
+}
+
+input[type=radio].arn-custom-label-radio:checked + label.arn-custom-label-radio::before {
+    color: $custom-control-indicator-checked-color;
+    background-image: $custom-radio-indicator-icon-checked;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: $custom-control-indicator-bg-size;
+    @include gradient-bg($custom-control-indicator-checked-bg);
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    display: inline;
+}
