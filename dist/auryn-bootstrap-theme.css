@@ -5299,10 +5299,15 @@
     border-radius: 2px; }
   .arn-bootstrap select {
     background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzODYuMjU3IDM4Ni4yNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni4yNTcgMzg2LjI1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9IjAsOTYuODc5IDE5My4xMjksMjg5LjM3OSAzODYuMjU3LDk2Ljg3OSAiIGZpbGw9IiM4MDgwODAiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==");
+    background-color: #FFF;
     background-position: top 13px right 11px;
     background-size: 10px;
     background-repeat: no-repeat;
-    outline: none; }
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 5px 38px 5px 5px;
+    outline: none;
+    width: 100%; }
   .arn-bootstrap input[type="email"],
   .arn-bootstrap input[type="number"],
   .arn-bootstrap input[type="password"],
@@ -5352,10 +5357,10 @@
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    text-indent: 28px; }
+    padding: 0 0 0 28px; }
   .arn-bootstrap label.arn-custom-label-radio::before {
     content: "";
-    margin: 0;
+    margin: 0 0 0 -28px;
     padding: 0;
     width: 1rem;
     height: 1rem;
@@ -5369,6 +5374,7 @@
   .arn-bootstrap input[type=radio].arn-custom-label-radio {
     display: none; }
   .arn-bootstrap input[type=radio].arn-custom-label-radio:checked + label.arn-custom-label-radio::before {
+    margin: 0 0 0 -28px;
     color: #fff;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
