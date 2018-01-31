@@ -5362,11 +5362,10 @@
     box-shadow: none !important; }
   .arn-bootstrap input {
     width: 100%;
-    border: none;
-    border-bottom: 1px solid #ccc;
+    border: 1px solid #ccc;
     margin: 0;
     color: #444;
-    padding: 12px 5px;
+    padding: 5px;
     outline: none; }
   .arn-bootstrap label.arn-custom-label-radio {
     align-items: center;
