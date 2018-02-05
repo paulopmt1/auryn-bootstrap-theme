@@ -66,13 +66,12 @@ label.arn-custom-label-radio {
     align-items: center;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
     padding: 0 0 0 28px;
 }
 
 label.arn-custom-label-radio::before {
     content: "";
-    margin: 0 0 0 -28px;
+    margin: 0 0 0 -19px;
     padding: 0;
     width: $custom-control-indicator-size;
     height: $custom-control-indicator-size;
@@ -90,7 +89,7 @@ input[type=radio].arn-custom-label-radio {
 }
 
 input[type=radio].arn-custom-label-radio:checked + label.arn-custom-label-radio::before {
-    margin: 0 0 0 -28px;
+    margin: 0 0 0 -19px;
     color: $custom-control-indicator-checked-color;
     background-image: $custom-radio-indicator-icon-checked;
     background-repeat: no-repeat;

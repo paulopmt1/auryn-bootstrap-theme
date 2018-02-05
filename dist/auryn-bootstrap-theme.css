@@ -5371,11 +5371,10 @@
     align-items: center;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
     padding: 0 0 0 28px; }
   .arn-bootstrap label.arn-custom-label-radio::before {
     content: "";
-    margin: 0 0 0 -28px;
+    margin: 0 0 0 -19px;
     padding: 0;
     width: 1rem;
     height: 1rem;
@@ -5389,7 +5388,7 @@
   .arn-bootstrap input[type=radio].arn-custom-label-radio {
     display: none; }
   .arn-bootstrap input[type=radio].arn-custom-label-radio:checked + label.arn-custom-label-radio::before {
-    margin: 0 0 0 -28px;
+    margin: 0 0 0 -19px;
     color: #fff;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
