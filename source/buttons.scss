@@ -12,25 +12,3 @@ input[type='button']:active {
 .btn {
     border-radius: 2px;
 }
-
-// Justified button groups
-// ----------------------
-
-.btn-group-justified {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: separate;
-  .btn,
-  .btn-group {
-    float: none;
-    display: table-cell;
-    width: 1%;
-    .btn {
-      width: 100%;
-    }
-    .dropdown-menu {
-      left: auto;
-    }
-  }
-}
