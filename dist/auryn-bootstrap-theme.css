@@ -5384,6 +5384,36 @@
   .arn-bootstrap input[type='checkbox'],
   .arn-bootstrap input[type='radio'] {
     display: inline; }
+  .arn-bootstrap .nav-minimal {
+    border: none;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1); }
+    .arn-bootstrap .nav-minimal .nav-item {
+      margin-bottom: -3px; }
+    .arn-bootstrap .nav-minimal .nav-link {
+      border: none;
+      border-bottom: 3px solid transparent;
+      color: #888;
+      margin: 0 1px; }
+      .arn-bootstrap .nav-minimal .nav-link:focus, .arn-bootstrap .nav-minimal .nav-link:hover {
+        border-color: #008cba;
+        color: #008cba; }
+      .arn-bootstrap .nav-minimal .nav-link.disabled {
+        background-color: transparent;
+        border-color: transparent;
+        color: #ccc; }
+    .arn-bootstrap .nav-minimal .nav-link.active,
+    .arn-bootstrap .nav-minimal .nav-item.show .nav-link {
+      background-color: transparent;
+      border-color: #008cba;
+      color: #008cba;
+      font-weight: bold; }
+    .arn-bootstrap .nav-minimal .dropdown-menu {
+      margin-top: -3px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+    .arn-bootstrap .nav-minimal.card-header-tabs {
+      margin-left: -1.25rem;
+      margin-right: -1.25rem; }
   .arn-bootstrap .modal {
     background: rgba(0, 0, 0, 0.5); }
   .arn-bootstrap .switch {
