@@ -73,7 +73,7 @@ $switch-transition: .2s all !default;
     }
 
     + label::before {
-      background-color: $primary;
+      background-color: $switch-bg;
       border-radius: $switch-border-radius;
       right: 0;
       transition: $switch-transition;
