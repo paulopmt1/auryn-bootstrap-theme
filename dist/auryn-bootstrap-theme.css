@@ -5466,7 +5466,7 @@
         transition: 0.2s all;
         width: calc(calc(2.375rem * .8) - calc(2px * 2)); }
       .arn-bootstrap .switch input:checked + label::before {
-        background-color: #08d; }
+        background-color: #008cba; }
       .arn-bootstrap .switch input:checked + label::after {
         margin-left: calc(2.375rem * .8); }
       .arn-bootstrap .switch input:focus + label::before {

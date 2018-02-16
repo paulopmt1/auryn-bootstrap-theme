@@ -91,7 +91,7 @@ $switch-transition: .2s all !default;
     }
 
     &:checked + label::before {
-      background-color: $switch-checked-bg;
+      background-color: $primary;
     }
 
     &:checked + label::after {
