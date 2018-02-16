@@ -5452,7 +5452,7 @@
         top: 0;
         width: calc(calc(2.375rem * .8) * 2); }
       .arn-bootstrap .switch input + label::before {
-        background-color: #008cba;
+        background-color: #dee2e6;
         border-radius: calc(2.375rem * .8);
         right: 0;
         transition: 0.2s all; }
