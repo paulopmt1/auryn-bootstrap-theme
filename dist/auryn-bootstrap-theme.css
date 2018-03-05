@@ -5475,3 +5475,5 @@
         margin-left: calc(3rem * .8); }
     .arn-bootstrap .switch + .switch {
       margin-left: 1rem; }
+  .arn-bootstrap .form-control:focus {
+    border-color: initial; }
