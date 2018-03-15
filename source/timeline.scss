@@ -208,7 +208,8 @@ header {
     border-radius: 50%;
     box-shadow: 0 0 0 4px $white, inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05) ;
 
-    img {
+    img,
+    .fa {
         display: block;
         width: 24px;
         height: 24px;
@@ -236,35 +237,6 @@ header {
         height: 60px;
         left: 50%;
         margin-left: -30px;
-
-        /* Force Hardware Acceleration in WebKit */
-        -webkit-transform: translateZ(0);
-        -webkit-backface-visibility: hidden;
-
-        .cssanimations &.is-hidden {
-            visibility: hidden;
-        }
-
-        .cssanimations &.bounce-in {
-            visibility: visible;
-            @include animation(cd-bounce-1 .6s);
-        }
-    }
-}
-
-@include keyframes(cd-bounce-1) {
-    0% {
-        opacity: 0;
-        @include transform(scale(.5));
-    }
-
-    60% {
-        opacity: 1;
-        @include transform(scale(1.2));
-    }
-
-    100% {
-        @include transform(scale(1));
     }
 }
 
@@ -360,15 +332,6 @@ header {
             top: 6px;
             @include font-size(16px);
         }
-
-        .cssanimations &.is-hidden {
-            visibility: hidden;
-        }
-
-        .cssanimations &.bounce-in {
-            visibility: visible;
-            @include animation(cd-bounce-2 .6s);
-        }
     }
 }
 
@@ -391,44 +354,5 @@ header {
         left: auto;
         right: 122%;
         text-align: right;
-    }
-}
-
-@include MQ(L) {
-    /* inverse bounce effect on even content blocks */
-    .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
-        @include animation(cd-bounce-2-inverse .6s);
-    }
-}
-
-@include keyframes(cd-bounce-2) {
-    0% {
-        opacity: 0;
-        @include transform(translateX(-100px));
-    }
-
-    60% {
-        opacity: 1;
-        @include transform(translateX(20px));
-    }
-
-    100% {
-        @include transform(translateX(0));
-    }
-}
-
-@include keyframes(cd-bounce-2-inverse) {
-    0% {
-        opacity: 0;
-        @include transform(translateX(100px));
-    }
-
-    60% {
-        opacity: 1;
-        @include transform(translateX(-20px));
-    }
-
-    100% {
-        @include transform(translateX(0));
     }
 }
