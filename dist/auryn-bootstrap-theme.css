@@ -5569,13 +5569,6 @@ Primary style
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-  .arn-bootstrap a {
-    color: #008cba;
-    text-decoration: none; }
-  .arn-bootstrap img {
-    max-width: 100%; }
-  .arn-bootstrap h1, .arn-bootstrap h2 {
-    font-weight: bold; }
   .arn-bootstrap .arn-container {
     background-color: #eee;
     margin: 0;

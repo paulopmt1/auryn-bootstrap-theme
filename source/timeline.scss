@@ -61,19 +61,6 @@ html * {
     @include box-sizing(border-box);
 }
 
-a {
-    color: $link;
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-}
-
-h1, h2 {
-    font-weight: bold;
-}
-
 .arn-container {
     background-color: $background;
     margin: 0;
@@ -226,43 +213,4 @@ h1, h2 {
         border: 7px solid transparent;
         border-right: 7px solid $white;
     }
-
-    // @include MQ(MEDIUM) {
-    //     h2 {
-    //         @include font-size(20px);
-    //     }
-
-    //     p {
-    //         @include font-size(16px);
-    //     }
-
-    //     .arn-read-more, .arn-date {
-    //         @include font-size(14px);
-    //     }
-    // }
-
-    // @include MQ(LARGE) {
-    //     margin-left: 0;
-    //     padding: 1.6em;
-    //     width: 45%;
-
-    //     &::before {
-    //         top: 24px;
-    //         left: 100%;
-    //         border-color: transparent;
-    //         border-left-color: $white;
-    //     }
-
-    //     .arn-read-more {
-    //         float: left;
-    //     }
-
-    //     .arn-date {
-    //         position: absolute;
-    //         width: 100%;
-    //         left: 122%;
-    //         top: 6px;
-    //         @include font-size(16px);
-    //     }
-    // }
 }
