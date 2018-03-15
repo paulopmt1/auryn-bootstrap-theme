@@ -28,21 +28,21 @@ $background: $light;
 
 // layout - breakpoints
    
-$S:     320px;   
-$M:     768px;     
-$L:     1170px;     
+$small:     320px;   
+$medium:    768px;     
+$large:     1170px;     
 
 // layout - media queries
 
 @mixin MQ($canvas) {
-  @if $canvas == S {
-   @media only screen and (min-width: $S) { @content; } 
+  @if $canvas == SMALL {
+   @media only screen and (min-width: $small) { @content; } 
   }
-  @else if $canvas == M {
-   @media only screen and (min-width: $M) { @content; } 
+  @else if $canvas == MEDIUM {
+   @media only screen and (min-width: $medium) { @content; } 
   }
-  @else if $canvas == L {
-   @media only screen and (min-width: $L) { @content; } 
+  @else if $canvas == LARGE {
+   @media only screen and (min-width: $large) { @content; } 
   }
 }
 
@@ -74,16 +74,10 @@ h1, h2 {
     font-weight: bold;
 }
 
-/* -------------------------------- 
-
-Modules - reusable parts of our design
-
--------------------------------- */
-
-.cd-container { /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+.arn-container {
     background-color: $background;
     margin: 0;
-    max-width: $L; // breakpoints inside partials > _layout.scss
+    max-width: $large; 
     padding: 1em;
     width: 100%;
 
@@ -94,43 +88,12 @@ Modules - reusable parts of our design
     }
 }
 
-/* -------------------------------- 
-
-Main components 
-
--------------------------------- */
-
-header {
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
-    background: $primary;
-
-    h1 {
-        color: $white;
-        @include font-size(18px);
-    }
-
-    @include MQ(L) {
-        height: 300px;
-        line-height: 300px;
-
-        h1 {
-            @include font-size(24px);
-        }
-    }
-}
-
-#cd-timeline {
+#arn-timeline {
     position: relative;
     padding: 2em 1em;
-    margin: {
-        top: 2em;
-        bottom: 2em;
-    }
+    margin: 0;
 
     &::before {
-        /* this is the vertical line */
         content: '';
         position: absolute;
         top: 0;
@@ -159,21 +122,9 @@ header {
             left: 34px;
         }
     }
-
-    @include MQ(L) {
-        margin: {
-            top: 3em;
-            bottom: 3em;
-        }
-
-        &::before {
-            left: 50%;
-            margin-left: -2px;
-        }
-    }
 }
 
-.cd-timeline-block {
+.arn-timeline-block {
     position: relative;
     margin: 2em 0;
     @include clearfix;
@@ -185,21 +136,9 @@ header {
     &:last-child {
         margin-bottom: 0;
     }
-
-    @include MQ(L) {
-        margin: 4em 0;
-
-        &:first-child {
-            margin-top: 0;
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
 }
 
-.cd-timeline-img {
+.arn-timeline-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -220,27 +159,21 @@ header {
         margin-top: -12px;
     }
 
-    &.cd-picture {
+    &.arn-picture {
         background: $success;
     }
 
-    &.cd-movie {
+    &.arn-movie {
         background: $danger;
     }
 
-    &.cd-location {
+    &.arn-location {
         background: $warning;
     }
 
-    @include MQ(L) {
-        width: 60px;
-        height: 60px;
-        left: 50%;
-        margin-left: -30px;
-    }
 }
 
-.cd-timeline-content {
+.arn-timeline-content {
     position: relative;
     margin-left: 60px;
     background: $white;
@@ -253,11 +186,11 @@ header {
         color: $primary;
     }
 
-    p, .cd-read-more, .cd-date {
+    p, .arn-read-more, .arn-date {
         @include font-size(13px);
     }
 
-    .cd-read-more, .cd-date {
+    .arn-read-more, .arn-date {
         display: inline-block;
     }
 
@@ -266,7 +199,7 @@ header {
         line-height: 1.6;
     }
 
-    .cd-read-more {
+    .arn-read-more {
         float: right;
         padding: .8em 1em;
         background: $link;
@@ -278,7 +211,7 @@ header {
         }
     }
 
-    .cd-date {
+    .arn-date {
         float: left;
         padding: .8em 0;
         opacity: .7;
@@ -295,64 +228,42 @@ header {
         border-right: 7px solid $white;
     }
 
-    @include MQ(M) {
-        h2 {
-            @include font-size(20px);
-        }
+    // @include MQ(MEDIUM) {
+    //     h2 {
+    //         @include font-size(20px);
+    //     }
 
-        p {
-            @include font-size(16px);
-        }
+    //     p {
+    //         @include font-size(16px);
+    //     }
 
-        .cd-read-more, .cd-date {
-            @include font-size(14px);
-        }
-    }
+    //     .arn-read-more, .arn-date {
+    //         @include font-size(14px);
+    //     }
+    // }
 
-    @include MQ(L) {
-        margin-left: 0;
-        padding: 1.6em;
-        width: 45%;
+    // @include MQ(LARGE) {
+    //     margin-left: 0;
+    //     padding: 1.6em;
+    //     width: 45%;
 
-        &::before {
-            top: 24px;
-            left: 100%;
-            border-color: transparent;
-            border-left-color: $white;
-        }
+    //     &::before {
+    //         top: 24px;
+    //         left: 100%;
+    //         border-color: transparent;
+    //         border-left-color: $white;
+    //     }
 
-        .cd-read-more {
-            float: left;
-        }
+    //     .arn-read-more {
+    //         float: left;
+    //     }
 
-        .cd-date {
-            position: absolute;
-            width: 100%;
-            left: 122%;
-            top: 6px;
-            @include font-size(16px);
-        }
-    }
-}
-
-.cd-timeline-block:nth-child(even) .cd-timeline-content {
-    float: right;
-
-    &::before {
-        top: 24px;
-        left: auto;
-        right: 100%;
-        border-color: transparent;
-        border-right-color: $white;
-    }
-
-    .cd-read-more {
-        float: right;
-    }
-
-    .cd-date {
-        left: auto;
-        right: 122%;
-        text-align: right;
-    }
+    //     .arn-date {
+    //         position: absolute;
+    //         width: 100%;
+    //         left: 122%;
+    //         top: 6px;
+    //         @include font-size(16px);
+    //     }
+    // }
 }

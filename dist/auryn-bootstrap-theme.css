@@ -10,16 +10,6 @@
 
 Primary style
 
--------------------------------- */
-  /* -------------------------------- 
-
-Modules - reusable parts of our design
-
--------------------------------- */
-  /* -------------------------------- 
-
-Main components 
-
 -------------------------------- */ }
   .arn-bootstrap :root {
     --blue: #008cba;
@@ -5293,6 +5283,54 @@ Main components
     .arn-bootstrap .table-bordered th,
     .arn-bootstrap .table-bordered td {
       border: 1px solid #ddd !important; } }
+  .arn-bootstrap .border {
+    border: 1px solid #eee !important; }
+  .arn-bootstrap .border-0 {
+    border: 0 !important; }
+  .arn-bootstrap .border-top-0 {
+    border-top: 0 !important; }
+  .arn-bootstrap .border-right-0 {
+    border-right: 0 !important; }
+  .arn-bootstrap .border-bottom-0 {
+    border-bottom: 0 !important; }
+  .arn-bootstrap .border-left-0 {
+    border-left: 0 !important; }
+  .arn-bootstrap .border-primary {
+    border-color: #008cba !important; }
+  .arn-bootstrap .border-secondary {
+    border-color: #ddd !important; }
+  .arn-bootstrap .border-success {
+    border-color: #43ac6a !important; }
+  .arn-bootstrap .border-info {
+    border-color: #5bc0de !important; }
+  .arn-bootstrap .border-warning {
+    border-color: #E99002 !important; }
+  .arn-bootstrap .border-danger {
+    border-color: #F04124 !important; }
+  .arn-bootstrap .border-light {
+    border-color: #eee !important; }
+  .arn-bootstrap .border-dark {
+    border-color: #222 !important; }
+  .arn-bootstrap .border-white {
+    border-color: #fff !important; }
+  .arn-bootstrap .rounded {
+    border-radius: 0 !important; }
+  .arn-bootstrap .rounded-top {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important; }
+  .arn-bootstrap .rounded-right {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important; }
+  .arn-bootstrap .rounded-bottom {
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important; }
+  .arn-bootstrap .rounded-left {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important; }
+  .arn-bootstrap .rounded-circle {
+    border-radius: 50% !important; }
+  .arn-bootstrap .rounded-0 {
+    border-radius: 0 !important; }
   .arn-bootstrap {
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; }
   .arn-bootstrap ul {
@@ -5538,41 +5576,22 @@ Main components
     max-width: 100%; }
   .arn-bootstrap h1, .arn-bootstrap h2 {
     font-weight: bold; }
-  .arn-bootstrap .cd-container {
-    /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  .arn-bootstrap .arn-container {
     background-color: #eee;
     margin: 0;
     max-width: 1170px;
     padding: 1em;
     width: 100%; }
-    .arn-bootstrap .cd-container::after {
+    .arn-bootstrap .arn-container::after {
       /* clearfix */
       content: '';
       display: table;
       clear: both; }
-  .arn-bootstrap header {
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
-    background: #008cba; }
-    .arn-bootstrap header h1 {
-      color: #fff;
-      font-size: 18px;
-      font-size: 1.125rem; }
-    @media only screen and (min-width: 1170px) {
-      .arn-bootstrap header {
-        height: 300px;
-        line-height: 300px; }
-        .arn-bootstrap header h1 {
-          font-size: 24px;
-          font-size: 1.5rem; } }
-  .arn-bootstrap #cd-timeline {
+  .arn-bootstrap #arn-timeline {
     position: relative;
     padding: 2em 1em;
-    margin-top: 2em;
-    margin-bottom: 2em; }
-    .arn-bootstrap #cd-timeline::before {
-      /* this is the vertical line */
+    margin: 0; }
+    .arn-bootstrap #arn-timeline::before {
       content: '';
       position: absolute;
       top: 0;
@@ -5581,46 +5600,32 @@ Main components
       width: 4px;
       background: #e1e1e1; }
       @media screen and (max-width: 540px) {
-        .arn-bootstrap #cd-timeline::before {
+        .arn-bootstrap #arn-timeline::before {
           left: 34px; } }
       @media screen and (min-width: 540px) {
-        .arn-bootstrap #cd-timeline::before {
+        .arn-bootstrap #arn-timeline::before {
           left: 34px; } }
       @media screen and (min-width: 720px) {
-        .arn-bootstrap #cd-timeline::before {
+        .arn-bootstrap #arn-timeline::before {
           left: 36px; } }
       @media screen and (min-width: 960px) {
-        .arn-bootstrap #cd-timeline::before {
+        .arn-bootstrap #arn-timeline::before {
           left: 34px; } }
       @media screen and (min-width: 1140px) {
-        .arn-bootstrap #cd-timeline::before {
+        .arn-bootstrap #arn-timeline::before {
           left: 34px; } }
-    @media only screen and (min-width: 1170px) {
-      .arn-bootstrap #cd-timeline {
-        margin-top: 3em;
-        margin-bottom: 3em; }
-        .arn-bootstrap #cd-timeline::before {
-          left: 50%;
-          margin-left: -2px; } }
-  .arn-bootstrap .cd-timeline-block {
+  .arn-bootstrap .arn-timeline-block {
     position: relative;
     margin: 2em 0; }
-    .arn-bootstrap .cd-timeline-block::after {
+    .arn-bootstrap .arn-timeline-block::after {
       clear: both;
       content: "";
       display: table; }
-    .arn-bootstrap .cd-timeline-block:first-child {
+    .arn-bootstrap .arn-timeline-block:first-child {
       margin-top: 0; }
-    .arn-bootstrap .cd-timeline-block:last-child {
+    .arn-bootstrap .arn-timeline-block:last-child {
       margin-bottom: 0; }
-    @media only screen and (min-width: 1170px) {
-      .arn-bootstrap .cd-timeline-block {
-        margin: 4em 0; }
-        .arn-bootstrap .cd-timeline-block:first-child {
-          margin-top: 0; }
-        .arn-bootstrap .cd-timeline-block:last-child {
-          margin-bottom: 0; } }
-  .arn-bootstrap .cd-timeline-img {
+  .arn-bootstrap .arn-timeline-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -5628,8 +5633,8 @@ Main components
     height: 40px;
     border-radius: 50%;
     box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); }
-    .arn-bootstrap .cd-timeline-img img,
-    .arn-bootstrap .cd-timeline-img .fa {
+    .arn-bootstrap .arn-timeline-img img,
+    .arn-bootstrap .arn-timeline-img .fa {
       display: block;
       width: 24px;
       height: 24px;
@@ -5638,52 +5643,46 @@ Main components
       top: 50%;
       margin-left: -12px;
       margin-top: -12px; }
-    .arn-bootstrap .cd-timeline-img.cd-picture {
+    .arn-bootstrap .arn-timeline-img.arn-picture {
       background: #43ac6a; }
-    .arn-bootstrap .cd-timeline-img.cd-movie {
+    .arn-bootstrap .arn-timeline-img.arn-movie {
       background: #F04124; }
-    .arn-bootstrap .cd-timeline-img.cd-location {
+    .arn-bootstrap .arn-timeline-img.arn-location {
       background: #E99002; }
-    @media only screen and (min-width: 1170px) {
-      .arn-bootstrap .cd-timeline-img {
-        width: 60px;
-        height: 60px;
-        left: 50%;
-        margin-left: -30px; } }
-  .arn-bootstrap .cd-timeline-content {
+  .arn-bootstrap .arn-timeline-content {
     position: relative;
     margin-left: 60px;
     background: #fff;
     border-radius: 0.25em;
     padding: 1em;
     box-shadow: 0 3px 0 #e1e1e1; }
-    .arn-bootstrap .cd-timeline-content::after {
+    .arn-bootstrap .arn-timeline-content::after {
       clear: both;
       content: "";
       display: table; }
-    .arn-bootstrap .cd-timeline-content h2 {
+    .arn-bootstrap .arn-timeline-content h2 {
       color: #008cba; }
-    .arn-bootstrap .cd-timeline-content p, .arn-bootstrap .cd-timeline-content .cd-read-more, .arn-bootstrap .cd-timeline-content .cd-date {
+    .arn-bootstrap .arn-timeline-content p, .arn-bootstrap .arn-timeline-content .arn-read-more, .arn-bootstrap .arn-timeline-content .arn-date {
       font-size: 13px;
       font-size: 0.8125rem; }
-    .arn-bootstrap .cd-timeline-content .cd-read-more, .arn-bootstrap .cd-timeline-content .cd-date {
+    .arn-bootstrap .arn-timeline-content .arn-read-more, .arn-bootstrap .arn-timeline-content .arn-date {
       display: inline-block; }
-    .arn-bootstrap .cd-timeline-content p {
+    .arn-bootstrap .arn-timeline-content p {
       margin: 1em 0;
       line-height: 1.6; }
-    .arn-bootstrap .cd-timeline-content .cd-read-more {
+    .arn-bootstrap .arn-timeline-content .arn-read-more {
       float: right;
       padding: .8em 1em;
       background: #008cba;
       color: #fff;
       border-radius: 0.25em; }
-      .no-touch .arn-bootstrap .cd-timeline-content .cd-read-more:hover {
+      .no-touch .arn-bootstrap .arn-timeline-content .arn-read-more:hover {
         background-color: #009fd4; }
-    .arn-bootstrap .cd-timeline-content .cd-date {
+    .arn-bootstrap .arn-timeline-content .arn-date {
       float: left;
       padding: .8em 0;
       opacity: .7; }
-    .arn-bootstrap .cd-timeline-content::before {
+    .arn-bootstrap .arn-timeline-content::before {
       content: '';
       position: absolute;
       top: 16px;
@@ -5692,46 +5691,3 @@ Main components
       width: 0;
       border: 7px solid transparent;
       border-right: 7px solid #fff; }
-    @media only screen and (min-width: 768px) {
-      .arn-bootstrap .cd-timeline-content h2 {
-        font-size: 20px;
-        font-size: 1.25rem; }
-      .arn-bootstrap .cd-timeline-content p {
-        font-size: 16px;
-        font-size: 1rem; }
-      .arn-bootstrap .cd-timeline-content .cd-read-more, .arn-bootstrap .cd-timeline-content .cd-date {
-        font-size: 14px;
-        font-size: 0.875rem; } }
-    @media only screen and (min-width: 1170px) {
-      .arn-bootstrap .cd-timeline-content {
-        margin-left: 0;
-        padding: 1.6em;
-        width: 45%; }
-        .arn-bootstrap .cd-timeline-content::before {
-          top: 24px;
-          left: 100%;
-          border-color: transparent;
-          border-left-color: #fff; }
-        .arn-bootstrap .cd-timeline-content .cd-read-more {
-          float: left; }
-        .arn-bootstrap .cd-timeline-content .cd-date {
-          position: absolute;
-          width: 100%;
-          left: 122%;
-          top: 6px;
-          font-size: 16px;
-          font-size: 1rem; } }
-  .arn-bootstrap .cd-timeline-block:nth-child(even) .cd-timeline-content {
-    float: right; }
-    .arn-bootstrap .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
-      top: 24px;
-      left: auto;
-      right: 100%;
-      border-color: transparent;
-      border-right-color: #fff; }
-    .arn-bootstrap .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
-      float: right; }
-    .arn-bootstrap .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
-      left: auto;
-      right: 122%;
-      text-align: right; }
