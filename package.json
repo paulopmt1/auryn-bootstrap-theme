@@ -1,6 +1,6 @@
 {
   "name": "auryn-bootstrap",
-  "version": "1.2.22",
+  "version": "1.2.23",
   "description": "Bootstrap Auryn - Versão Oficial",
   "main": "index.js",
   "scripts": {
@@ -14,12 +14,12 @@
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-sass": "^2.0.0",
+    "grunt-sass": "^2.1.0",
     "load-grunt-tasks": "^3.5.2",
     "node-sass": "^4.7.2"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-beta.3",
+    "bootstrap": "^4.0.0",
     "node-bourbon": "^4.2.8"
   }
 }
