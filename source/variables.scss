@@ -96,3 +96,9 @@ $list-group-disabled-bg:            $gray-200 !default;
 // Close
 $close-color:                       $gray-600 !default;
 $close-text-shadow:                 none !default;
+
+// theme colors
+$theme-colors: () !default;
+$theme-colors: map-merge((
+  "important":    $purple,
+), $theme-colors);
