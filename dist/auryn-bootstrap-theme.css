@@ -5558,7 +5558,7 @@ Primary style
       clear: both; }
   .arn-bootstrap #arn-timeline {
     position: relative;
-    padding: 2em 1em;
+    padding: 1em;
     margin: 0; }
     .arn-bootstrap #arn-timeline::before {
       content: '';
@@ -5585,7 +5585,7 @@ Primary style
           left: 34px; } }
   .arn-bootstrap .arn-timeline-block {
     position: relative;
-    margin: 2em 0; }
+    margin: 1em 0; }
     .arn-bootstrap .arn-timeline-block::after {
       clear: both;
       content: "";
