@@ -53,164 +53,126 @@ Primary style
 -------------------------------- */
 
 html * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 *, *:after, *:before {
-    @include box-sizing(border-box);
+  @include box-sizing(border-box);
 }
 
 .arn-container {
-    background-color: $background;
-    margin: 0;
-    max-width: $large; 
-    padding: 1em;
-    width: 100%;
+  background-color: $background;
+  margin: 0;
+  max-width: $large; 
+  padding: 1em;
+  width: 100%;
 
-    &::after { /* clearfix */
-        content: '';
-        display: table;
-        clear: both;
-    }
+  &::after { /* clearfix */
+    clear: both;
+    content: '';
+    display: table;
+  }
 }
 
 #arn-timeline {
-    position: relative;
-    padding: 1em;
-    margin: 0;
+  margin: 0;
+  padding: 1em;
+  position: relative;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 18px;
-        height: 100%;
-        width: 4px;
-        background: darken($background, 5%);
+  &::before {
+    background: darken($background, 5%);
+    content: '';
+    height: 100%;
+    left: 18px;
+    position: absolute;
+    top: 0;
+    width: 4px;
 
-        @media screen and (max-width: 540px) {
-            left: 34px;
-        }
-
-        @media screen and (min-width: 540px) {
-            left: 34px;
-        }
-
-        @media screen and (min-width: 720px) {
-            left: 36px;
-        }
-
-        @media screen and (min-width: 960px) {
-            left: 34px;
-        }
-
-        @media screen and (min-width: 1140px) {
-            left: 34px;
-        }
+    @media screen and (max-width: 540px) {
+      left: 34px;
     }
+
+    @media screen and (min-width: 540px) {
+      left: 34px;
+    }
+
+    @media screen and (min-width: 720px) {
+      left: 36px;
+    }
+
+    @media screen and (min-width: 960px) {
+      left: 34px;
+    }
+
+    @media screen and (min-width: 1140px) {
+      left: 34px;
+    }
+  }
 }
 
 .arn-timeline-block {
-    position: relative;
-    margin: 1em 0;
-    @include clearfix;
+  position: relative;
+  margin: 1em 0;
+  @include clearfix;
 
-    &:first-child {
-        margin-top: 0;
-    }
+  &:first-child {
+    margin-top: 0;
+  }
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .arn-timeline-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px $white, inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05) ;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px $white,
+    inset 0 2px 0 rgba(#000, .08),
+    0 3px 0 4px rgba(#000, .05) ;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
 
-    img {
-        display: block;
-        width: 24px;
-        height: 24px;
-        position: relative;
-        left: 50%;
-        top: 50%;
-        margin-left: -12px;
-        margin-top: -12px;
-    }
+  img {
+    display: block;
+    height: 24px;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+    position: relative;
+    top: 50%;
+    width: 24px;
+  }
 
-    &.arn-picture {
-        background: $success;
-    }
-
-    &.arn-movie {
-        background: $danger;
-    }
-
-    &.arn-location {
-        background: $warning;
-    }
-
+  &.fa {
+    text-shadow: 0 1px 1px rgba(100,100,100,.75);
+  }
 }
 
 .arn-timeline-content {
-    position: relative;
-    margin-left: 60px;
-    background: $white;
-    @include border-radius;
-    padding: 1em;
-    box-shadow: 0 3px 0 darken($background, 5%);
-    @include clearfix;
+  @include border-radius;
+  @include clearfix;
+  background: $white;
+  box-shadow: 0 3px 0 darken($background, 5%);
+  margin-left: 60px;
+  padding: .5em 1em;
+  position: relative;
 
-    h2 {
-        color: $primary;
-    }
+  p {
+    @include font-size(13px);
+  }
 
-    p, .arn-read-more, .arn-date {
-        @include font-size(13px);
-    }
-
-    .arn-read-more, .arn-date {
-        display: inline-block;
-    }
-
-    p {
-        margin: 1em 0;
-        line-height: 1.6;
-    }
-
-    .arn-read-more {
-        float: right;
-        padding: .8em 1em;
-        background: $link;
-        color: $white;
-        @include border-radius;
-
-        .no-touch &:hover {
-            background-color: lighten($link, 5%);
-        }
-    }
-
-    .arn-date {
-        float: left;
-        padding: .8em 0;
-        opacity: .7;
-    }
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 16px;
-        right: 100%;
-        height: 0;
-        width: 0;
-        border: 7px solid transparent;
-        border-right: 7px solid $white;
-    }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid $white;
+  }
 }

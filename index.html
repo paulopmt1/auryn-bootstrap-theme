@@ -5,8 +5,8 @@
         <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <style>
-            .bs-component+.bs-component {
-                margin-top: 1rem;
+            .bs-component + .bs-component {
+                margin-top: 2em;
             }
 
             .bs-component {
@@ -1323,24 +1323,38 @@
                         <div class="arn-timeline-block">
                             <div class="arn-timeline-img d-flex justify-content-center align-items-center bg-success text-white">
                                 <i class="fa fa-plus-circle"></i>
-                            </div> <!-- arn-timeline-img -->
+                            </div>
 
                             <div class="arn-timeline-content">
-                                <p>This is the content of the last section</p>
-                                <span class="arn-date">Feb 26</span>
-                            </div> <!-- arn-timeline-content -->
-                        </div> <!-- arn-timeline-block -->
+                                <div class="row">
+                                    <div class="col-12 col-sm-9">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt laudantium dolores ducimus rerum sunt sint perspiciatis perferendis molestias eos, cupiditate, repellat rem minus deserunt autem ea itaque dignissimos delectus veritatis.</p>
+                                        <small class="text-muted">Efetuado por <b>Teste</b> em <b>01/01/2018 12:00</b></small>
+                                    </div>
+                                    <div class="col-12 col-sm-3 d-flex justify-content-end align-items-center">
+                                        <h3 class="text-success text-sm-right m-0">R$ 200,00</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="arn-timeline-block">
                             <div class="arn-timeline-img d-flex justify-content-center align-items-center bg-important text-white">
                                 <i class="fa fa-minus-circle"></i>
-                            </div> <!-- arn-timeline-img -->
+                            </div>
 
                             <div class="arn-timeline-content">
-                                <p>This is the content of the last section</p>
-                                <span class="arn-date">Feb 26</span>
-                            </div> <!-- arn-timeline-content -->
-                        </div> <!-- arn-timeline-block -->
-                    </section> <!-- arn-timeline -->
+                                <div class="row">
+                                    <div class="col-12 col-sm-9">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <small class="text-muted">Efetuado por <b>Teste</b> em <b>01/01/2018 12:00</b></small>
+                                    </div>
+                                    <div class="col-12 col-sm-3 d-flex justify-content-end align-items-center">
+                                        <h3 class="text-important text-sm-right m-0">R$ 200,00</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
