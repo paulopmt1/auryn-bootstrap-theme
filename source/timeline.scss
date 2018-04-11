@@ -6,7 +6,7 @@
 
 $main-text:  $dark;
 $link:       $primary;
-$background: $light;
+$background: $gray-100;
 
 // mixins - rem fallback - credits: http://zerosixthree.se/
 
@@ -129,7 +129,7 @@ html * {
   border-radius: 50%;
   box-shadow: 0 0 0 4px $white,
     inset 0 2px 0 rgba(#000, .08),
-    0 3px 0 4px rgba(#000, .05) ;
+    0 2px 0 4px rgba(#000, .05) ;
   height: 40px;
   left: 0;
   position: absolute;
@@ -156,7 +156,7 @@ html * {
   @include border-radius;
   @include clearfix;
   background: $white;
-  box-shadow: 0 3px 0 darken($background, 5%);
+  box-shadow: 0 1px 0 darken($background, 5%);
   margin-left: 60px;
   padding: .5em 1em;
   position: relative;
