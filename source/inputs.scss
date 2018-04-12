@@ -138,6 +138,7 @@ input[type='radio'] {
                 user-select: none;
 
                 &:before {
+                    font-family: FontAwesome;
                     position: absolute;
                     top: 0;
                     bottom: 0;
@@ -156,6 +157,7 @@ input[type='radio'] {
 
         &:hover:not(:checked) ~ label {
             &:before {
+                font-family: FontAwesome;
                 content: '\f00c';
                 text-indent: .9em;
                 color: $gray-800;
@@ -164,6 +166,7 @@ input[type='radio'] {
 
         &:checked ~ label {
             &:before {
+                font-family: FontAwesome;
                 content: '\f00c';
                 text-indent: .9em;
                 color: $gray-800;

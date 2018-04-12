@@ -5476,6 +5476,7 @@ Primary style
       user-select: none; }
       .arn-bootstrap .arn-funkyradio input[type="radio"]:empty ~ label:before,
       .arn-bootstrap .arn-funkyradio input[type="checkbox"]:empty ~ label:before {
+        font-family: FontAwesome;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -5490,11 +5491,13 @@ Primary style
         align-items: center; }
   .arn-bootstrap .arn-funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
   .arn-bootstrap .arn-funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+    font-family: FontAwesome;
     content: '\f00c';
     text-indent: .9em;
     color: #444; }
   .arn-bootstrap .arn-funkyradio input[type="radio"]:checked ~ label:before,
   .arn-bootstrap .arn-funkyradio input[type="checkbox"]:checked ~ label:before {
+    font-family: FontAwesome;
     content: '\f00c';
     text-indent: .9em;
     color: #444;
