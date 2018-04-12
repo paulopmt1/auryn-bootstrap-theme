@@ -5809,39 +5809,110 @@ Primary style
       width: 0;
       border: 7px solid transparent;
       border-right: 7px solid #fff; }
-  .arn-bootstrap .arn-tooltip-toggle {
-    cursor: pointer;
-    position: relative; }
-    .arn-bootstrap .arn-tooltip-toggle::before {
-      position: absolute;
-      top: -32px;
-      left: -10px;
-      background-color: #222;
-      border-radius: 5px;
-      color: #fff;
-      content: attr(aria-label);
-      padding: 5px;
-      text-transform: none;
-      transition: all 0.5s ease; }
-    .arn-bootstrap .arn-tooltip-toggle::after {
-      position: absolute;
-      top: -5px;
-      left: 9px;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 5px solid #222;
-      content: " ";
-      font-size: 0;
-      line-height: 0;
-      margin-left: -5px;
-      width: 0; }
-    .arn-bootstrap .arn-tooltip-toggle::before, .arn-bootstrap .arn-tooltip-toggle::after {
-      color: #fff;
-      font-family: monospace;
-      font-size: 13px;
-      opacity: 0;
-      pointer-events: none;
-      text-align: center; }
-    .arn-bootstrap .arn-tooltip-toggle:focus::before, .arn-bootstrap .arn-tooltip-toggle:focus::after, .arn-bootstrap .arn-tooltip-toggle:hover::before, .arn-bootstrap .arn-tooltip-toggle:hover::after {
-      opacity: 1;
-      transition: all 0.75s ease; }
+  .arn-bootstrap [class*="tooltip"] {
+    position: relative;
+    text-decoration: none; }
+  .arn-bootstrap [class*="tooltip"]:after,
+  .arn-bootstrap [class*="tooltip"]:before {
+    position: absolute;
+    z-index: 100;
+    opacity: 0; }
+  .arn-bootstrap [class*="tooltip"]:after {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    content: attr(aria-label);
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    background: #222;
+    border-radius: 4px;
+    text-shadow: 0 0 5px #000;
+    white-space: nowrap; }
+  .arn-bootstrap [class*="tooltip"]:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    border-style: solid; }
+  .arn-bootstrap [class*="tooltip"]:hover:after,
+  .arn-bootstrap [class*="tooltip"]:focus:after,
+  .arn-bootstrap [class*="tooltip"]:hover:before,
+  .arn-bootstrap [class*="tooltip"]:focus:before {
+    opacity: 1; }
+  .arn-bootstrap .tooltip-top:after,
+  .arn-bootstrap .tooltip-top:before {
+    transition: bottom 0.25s ease-in-out;
+    bottom: 90%;
+    left: -9999px;
+    margin-bottom: 12px; }
+  .arn-bootstrap .tooltip-top:before {
+    border-color: #222 transparent transparent transparent;
+    margin-bottom: 0; }
+  .arn-bootstrap .tooltip-top:hover:after,
+  .arn-bootstrap .tooltip-top:focus:after,
+  .arn-bootstrap .tooltip-top:hover:before,
+  .arn-bootstrap .tooltip-top:focus:before {
+    bottom: 85%;
+    left: 0; }
+  .arn-bootstrap .tooltip-top:hover:before,
+  .arn-bootstrap .tooltip-top:focus:before {
+    left: 15px; }
+  .arn-bootstrap .tooltip-bottom:after,
+  .arn-bootstrap .tooltip-bottom:before {
+    transition: top 0.25s ease-in-out;
+    top: 90%;
+    left: -9999px;
+    margin-top: 12px; }
+  .arn-bootstrap .tooltip-bottom:before {
+    border-color: transparent transparent #222 transparent;
+    margin-top: 0; }
+  .arn-bootstrap .tooltip-bottom:hover:after,
+  .arn-bootstrap .tooltip-bottom:focus:after,
+  .arn-bootstrap .tooltip-bottom:hover:before,
+  .arn-bootstrap .tooltip-bottom:focus:before {
+    top: 85%;
+    left: 0; }
+  .arn-bootstrap .tooltip-bottom:hover:before,
+  .arn-bootstrap .tooltip-bottom:focus:before {
+    left: 15px; }
+  .arn-bootstrap .tooltip-right:after,
+  .arn-bootstrap .tooltip-right:before {
+    transition: left 0.25s ease-in-out;
+    top: -9999px;
+    left: 96%;
+    margin-left: 12px; }
+  .arn-bootstrap .tooltip-right:before {
+    border-color: transparent #222 transparent transparent;
+    margin-left: 0; }
+  .arn-bootstrap .tooltip-right:hover:after,
+  .arn-bootstrap .tooltip-right:focus:after,
+  .arn-bootstrap .tooltip-right:hover:before,
+  .arn-bootstrap .tooltip-right:focus:before {
+    left: 95%;
+    top: 0; }
+  .arn-bootstrap .tooltip-right:hover:before,
+  .arn-bootstrap .tooltip-right:focus:before {
+    top: 7px; }
+  .arn-bootstrap .tooltip-left:after,
+  .arn-bootstrap .tooltip-left:before {
+    transition: right 0.25s ease-in-out;
+    top: -9999px;
+    right: 96%;
+    margin-right: 12px; }
+  .arn-bootstrap .tooltip-left:before {
+    border-color: transparent transparent transparent #222;
+    margin-right: 0; }
+  .arn-bootstrap .tooltip-left:hover:after,
+  .arn-bootstrap .tooltip-left:focus:after,
+  .arn-bootstrap .tooltip-left:hover:before,
+  .arn-bootstrap .tooltip-left:focus:before {
+    right: 95%;
+    top: 0; }
+  .arn-bootstrap .tooltip-left:hover:before,
+  .arn-bootstrap .tooltip-left:focus:before {
+    top: 7px; }
+  .arn-bootstrap [class*="tooltip"]:after,
+  .arn-bootstrap [class*="tooltip"]:before {
+    transition: opacity 0.25s ease-in-out; }
