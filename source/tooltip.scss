@@ -1,0 +1,49 @@
+.arn-tooltip-toggle {
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: -43px;
+        left: -10px;
+        background-color: $gray-900;
+        border-radius: 5px;
+        color: #fff;
+        content: attr(aria-label);
+        padding: 10px;
+        text-transform: none;
+        transition: all 0.5s ease;
+    }
+
+    &::after {
+        position: absolute;
+        top: -5px;
+        left: 9px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $gray-900;
+        content: " ";
+        font-size: 0;
+        line-height: 0;
+        margin-left: -5px;
+        width: 0;
+    }
+
+    &::before,
+    &::after {
+        color: $white;
+        font-family: monospace;
+        font-size: 16px;
+        opacity: 0;
+        pointer-events: none;
+        text-align: center;
+    }
+
+    &:focus::before,
+    &:focus::after,
+    &:hover::before,
+    &:hover::after {
+        opacity: 1;
+        transition: all 0.75s ease;
+    }
+}
