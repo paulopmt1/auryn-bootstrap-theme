@@ -1,6 +1,6 @@
 %arn-select {
     background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzODYuMjU3IDM4Ni4yNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni4yNTcgMzg2LjI1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9IjAsOTYuODc5IDE5My4xMjksMjg5LjM3OSAzODYuMjU3LDk2Ljg3OSAiIGZpbGw9IiM4MDgwODAiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==');
-    background-color: #FFF;
+    background-color: $white;
     background-position: top 13px right 11px;
     background-size: 10px;
     background-repeat: no-repeat;
@@ -106,4 +106,142 @@ input[type=radio].arn-custom-label-radio:checked + label.arn-custom-label-radio:
 input[type='checkbox'],
 input[type='radio'] {
     display: inline;
+}
+
+
+.funkyradio {
+
+    div {
+        clear: both;
+        overflow: hidden;
+    }
+
+    label {
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid $gray-400;
+        font-weight: normal;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+
+        &:empty {
+            display: none;
+
+            ~ label {
+                position: relative;
+                line-height: 2.5em;
+                text-indent: 3.25em;
+                margin-top: 2em;
+                cursor: pointer;
+                user-select: none;
+
+                &:before {
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    content: '\2714';
+                    color: $gray-300;
+                    text-indent: .9em;
+                    width: 2.5em;
+                    background: $gray-200;
+                    border-radius: 3px 0 0 3px;
+                }
+            }
+        }
+
+        &:hover:not(:checked) ~ label {
+            &:before {
+                content: '\2714';
+                text-indent: .9em;
+                color: $gray-800;
+            }
+        }
+
+        &:checked ~ label {
+            &:before {
+                content: '\2714';
+                text-indent: .9em;
+                color: $gray-800;
+                background-color: $gray-400;
+            }
+        }
+
+        &:focus ~ label:before {
+            box-shadow: 0 0 0 3px $gray-600;
+        }
+    }
+
+    &-secondary {
+        input[type="radio"],
+        input[type="checkbox"] {
+            &:checked ~ label:before {
+                color: $gray-800;
+                background-color: $secondary;
+            }
+        }
+    }
+
+    &-dark {
+        input[type="radio"],
+        input[type="checkbox"] {
+            &:checked ~ label:before {
+                color: $white;
+                background-color: $secondary;
+            }
+        }
+    }
+
+    &-primary {
+        input[type="radio"],
+        input[type="checkbox"] {
+            &:checked ~ label:before {
+                color: $white;
+                background-color: $primary;
+            }
+        }
+    }
+
+    &-success {
+        input[type="radio"],
+        input[type="checkbox"] {
+            &:checked ~ label:before {
+                color: $white;
+                background-color: $success;
+            }
+        }
+    }
+
+    &-danger {
+        input[type="radio"],
+        input[type="checkbox"] {
+            &:checked ~ label:before {
+                color: $white;
+                background-color: $danger;
+            }
+        }
+    }
+
+    &-warning {
+        input[type="radio"],
+        input[type="checkbox"] {
+            &:checked ~ label:before {
+                color: $white;
+                background-color: $warning;
+            }
+        }
+    }
+
+    &-info {
+        input[type="radio"],
+        input[type="checkbox"] {
+            &:checked ~ label:before {
+                color: $white;
+                background-color: $info;
+            }
+        }
+    }
 }
