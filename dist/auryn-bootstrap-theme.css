@@ -5480,7 +5480,7 @@ Primary style
         top: 0;
         bottom: 0;
         left: 0;
-        content: '\2714';
+        content: '\f00c';
         color: #ddd;
         text-indent: .9em;
         width: 2.5em;
@@ -5490,12 +5490,12 @@ Primary style
         align-items: center; }
   .arn-bootstrap .arn-funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
   .arn-bootstrap .arn-funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
-    content: '\2714';
+    content: '\f00c';
     text-indent: .9em;
     color: #444; }
   .arn-bootstrap .arn-funkyradio input[type="radio"]:checked ~ label:before,
   .arn-bootstrap .arn-funkyradio input[type="checkbox"]:checked ~ label:before {
-    content: '\2714';
+    content: '\f00c';
     text-indent: .9em;
     color: #444;
     background-color: #ccc; }
