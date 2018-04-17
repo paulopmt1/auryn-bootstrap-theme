@@ -161,10 +161,6 @@ html * {
   padding: .5em 1em;
   position: relative;
 
-  p {
-    font-size: .8em;
-  }
-
   &::before {
     content: '';
     position: absolute;
