@@ -6000,8 +6000,6 @@ Primary style
       clear: both;
       content: "";
       display: table; }
-    .arn-bootstrap .arn-timeline-content p {
-      font-size: .8em; }
     .arn-bootstrap .arn-timeline-content::before {
       content: '';
       position: absolute;
