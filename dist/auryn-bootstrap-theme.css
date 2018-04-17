@@ -6001,8 +6001,7 @@ Primary style
       content: "";
       display: table; }
     .arn-bootstrap .arn-timeline-content p {
-      font-size: 13px;
-      font-size: 0.8125rem; }
+      font-size: .8em; }
     .arn-bootstrap .arn-timeline-content::before {
       content: '';
       position: absolute;

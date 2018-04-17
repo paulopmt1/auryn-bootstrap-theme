@@ -162,7 +162,7 @@ html * {
   position: relative;
 
   p {
-    @include font-size(13px);
+    font-size: .8em;
   }
 
   &::before {
