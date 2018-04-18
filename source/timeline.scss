@@ -7,6 +7,7 @@
 $main-text:  $dark;
 $link:       $primary;
 $background: $gray-100;
+$timeline-img-size: 25px !default;
 
 // mixins - rem fallback - credits: http://zerosixthree.se/
 
@@ -84,29 +85,29 @@ html * {
     background: darken($background, 5%);
     content: '';
     height: 100%;
-    left: 18px;
+    left: 26px;
     position: absolute;
     top: 0;
     width: 4px;
 
-    @media screen and (max-width: 540px) {
-      left: 34px;
+    @media screen and (max-width: 576px) {
+      left: 26px;
     }
 
-    @media screen and (min-width: 540px) {
-      left: 34px;
+    @media screen and (min-width: 576px) {
+      left: 26px;
     }
 
-    @media screen and (min-width: 720px) {
-      left: 36px;
+    @media screen and (min-width: 768px) {
+      left: 26px;
     }
 
-    @media screen and (min-width: 960px) {
-      left: 34px;
+    @media screen and (min-width: 992px) {
+      left: 26px;
     }
 
-    @media screen and (min-width: 1140px) {
-      left: 34px;
+    @media screen and (min-width: 1200px) {
+      left: 26px;
     }
   }
 }
@@ -130,11 +131,11 @@ html * {
   box-shadow: 0 0 0 4px $white,
     inset 0 2px 0 rgba(#000, .08),
     0 2px 0 4px rgba(#000, .05) ;
-  height: 40px;
+  height: $timeline-img-size;
   left: 0;
   position: absolute;
-  top: 0;
-  width: 40px;
+  top: 10px;
+  width: $timeline-img-size;
 
   img {
     display: block;
@@ -157,7 +158,7 @@ html * {
   @include clearfix;
   background: $white;
   box-shadow: 0 1px 0 darken($background, 5%);
-  margin-left: 60px;
+  margin-left: 45px;
   padding: .5em 1em;
   position: relative;
 
