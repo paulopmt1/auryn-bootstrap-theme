@@ -6,6 +6,17 @@
         <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <style>
+
+            .bs-docs-section {
+                background-color: #fcfcfc;
+                border-radius: .25em;
+                padding: 1em;
+            }
+
+            .bs-docs-section + .bs-docs-section {
+                margin-top: 2em;
+            }
+
             .bs-component + .bs-component {
                 margin-top: 2em;
             }
@@ -14,8 +25,9 @@
                 position: relative;
             }
 
-            .bs-component .page-header {
-                margin-top: 2em;
+            .page-header {
+                border-bottom: 4px double #eee;
+                margin: 0 0 1em 0;
             }
         </style>
     </head>
@@ -25,18 +37,18 @@
                 <div class="page-header" id="banner">
                     <div class="row">
                         <div class="col">
-                            <h1>Yeti</h1>
-                            <p class="lead">A friendly foundation</p>
+                            <h1>Auryn Bootstrap</h1>
+                            <p class="lead">A friendly foundation theme for us!</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Navbar ================================================== -->
-                <div class="bs-docs-section clearfix">
+                <div class="bs-docs-section shadow-sm clearfix">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="page-header">
-                                <h1 id="navbars">Navbars</h1>
+                                <h2 id="navbars">Navbars</h2>
                             </div>
                             <div class="bs-component">
                                 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -127,16 +139,17 @@
                 </div>
                 <!-- Buttons
                     ================================================== -->
-                <div class="bs-docs-section">
+                <div class="bs-docs-section shadow-sm">
                     <div class="page-header">
                         <div class="row">
                             <div class="col-lg-12">
-                                <h1 id="buttons">Buttons</h1>
+                                <h2 id="buttons">Buttons</h2>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-7">
+                        <div class="col-lg-12">
+                            <h3>Basic</h3>
                             <p class="bs-component">
                                 <button type="button" class="btn btn-primary">Primary</button>
                                 <button type="button" class="btn btn-secondary">Secondary</button>
@@ -144,8 +157,13 @@
                                 <button type="button" class="btn btn-info">Info</button>
                                 <button type="button" class="btn btn-warning">Warning</button>
                                 <button type="button" class="btn btn-danger">Danger</button>
+                                <button type="button" class="btn btn-important">Important</button>
+                                <button type="button" class="btn btn-light">Light</button>
+                                <button type="button" class="btn btn-dark">Dark</button>
                                 <button type="button" class="btn btn-link">Link</button>
                             </p>
+
+                            <h3>Disabled</h3>
                             <p class="bs-component">
                                 <button type="button" class="btn btn-primary disabled">Primary</button>
                                 <button type="button" class="btn btn-secondary disabled">Secondary</button>
@@ -153,8 +171,13 @@
                                 <button type="button" class="btn btn-info disabled">Info</button>
                                 <button type="button" class="btn btn-warning disabled">Warning</button>
                                 <button type="button" class="btn btn-danger disabled">Danger</button>
+                                <button type="button" class="btn btn-important disabled">Important</button>
+                                <button type="button" class="btn btn-light disabled">Light</button>
+                                <button type="button" class="btn btn-dark disabled">Dark</button>
                                 <button type="button" class="btn btn-link disabled">Link</button>
                             </p>
+
+                            <h3>Outline</h3>
                             <p class="bs-component">
                                 <button type="button" class="btn btn-outline-primary">Primary</button>
                                 <button type="button" class="btn btn-outline-secondary">Secondary</button>
@@ -162,8 +185,13 @@
                                 <button type="button" class="btn btn-outline-info">Info</button>
                                 <button type="button" class="btn btn-outline-warning">Warning</button>
                                 <button type="button" class="btn btn-outline-danger">Danger</button>
+                                <button type="button" class="btn btn-outline-important">Important</button>
+                                <button type="button" class="btn btn-outline-light">Light</button>
+                                <button type="button" class="btn btn-outline-dark">Dark</button>
                             </p>
-                            <div class="bs-component">
+
+                            <h3>With dropdown</h3>
+                            <p class="bs-component">
                                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                                     <button type="button" class="btn btn-primary">Primary</button>
                                     <div class="btn-group" role="group">
@@ -204,18 +232,21 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="bs-component">
+                            </p>
+
+                            <h3>Button Sizes</h3>
+                            <p class="bs-component">
                                 <button type="button" class="btn btn-primary btn-lg">Large button</button>
                                 <button type="button" class="btn btn-primary">Default button</button>
                                 <button type="button" class="btn btn-primary btn-sm">Small button</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
+                            </p>
+
                             <p class="bs-component">
                                 <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
                             </p>
-                            <div class="bs-component" style="margin-bottom: 15px;">
+
+                            <h3>Radio buttons</h3>
+                            <p class="bs-component" style="margin-bottom: 15px;">
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn btn-primary active">
                                     <input type="checkbox" checked="" autocomplete="off"> Active
@@ -227,7 +258,9 @@
                                     <input type="checkbox" autocomplete="off"> Check
                                     </label>
                                 </div>
-                            </div>
+                            </p>
+
+                            <h3>Check buttons</h3>
                             <div class="bs-component" style="margin-bottom: 15px;">
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn btn-primary active">
@@ -241,6 +274,8 @@
                                     </label>
                                 </div>
                             </div>
+
+                            <h3>Button groups</h3>
                             <div class="bs-component">
                                 <div class="btn-group-vertical" data-toggle="buttons">
                                     <button type="button" class="btn btn-primary">Button</button>
@@ -251,6 +286,7 @@
                                     <button type="button" class="btn btn-primary">Button</button>
                                 </div>
                             </div>
+
                             <div class="bs-component" style="margin-bottom: 15px;">
                                 <div class="btn-group" role="group" aria-label="Basic example">
                                     <button type="button" class="btn btn-secondary">Left</button>
@@ -258,6 +294,7 @@
                                     <button type="button" class="btn btn-secondary">Right</button>
                                 </div>
                             </div>
+
                             <div class="bs-component" style="margin-bottom: 15px;">
                                 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                                     <div class="btn-group mr-2" role="group" aria-label="First group">
@@ -269,10 +306,6 @@
                                     <div class="btn-group mr-2" role="group" aria-label="Second group">
                                         <button type="button" class="btn btn-secondary">5</button>
                                         <button type="button" class="btn btn-secondary">6</button>
-                                        <button type="button" class="btn btn-secondary">7</button>
-                                    </div>
-                                    <div class="btn-group" role="group" aria-label="Third group">
-                                        <button type="button" class="btn btn-secondary">8</button>
                                     </div>
                                 </div>
                             </div>
@@ -281,11 +314,11 @@
                 </div>
                 <!-- Typography
                     ================================================== -->
-                <div class="bs-docs-section">
+                <div class="bs-docs-section shadow-sm">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="page-header">
-                                <h1 id="typography">Typography</h1>
+                                <h2 id="typography">Typography</h2>
                             </div>
                         </div>
                     </div>
@@ -308,7 +341,7 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="bs-component">
-                                <h2>Example body text</h2>
+                                <h3>Example body text</h3>
                                 <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
                                 <p><small>This line of text is meant to be treated as fine print.</small></p>
                                 <p>The following is <strong>rendered as bold text</strong>.</p>
@@ -318,7 +351,7 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="bs-component">
-                                <h2>Emphasis classes</h2>
+                                <h3>Emphasis classes</h3>
                                 <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
                                 <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                                 <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
@@ -331,7 +364,7 @@
                     <!-- Blockquotes -->
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2 id="type-blockquotes">Blockquotes</h2>
+                            <h3 id="type-blockquotes">Blockquotes</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -364,11 +397,11 @@
                 </div>
                 <!-- Tables
                     ================================================== -->
-                <div class="bs-docs-section">
+                <div class="bs-docs-section shadow-sm">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="page-header">
-                                <h1 id="tables">Tables</h1>
+                                <h2 id="tables">Tables</h2>
                             </div>
                             <div class="bs-component">
                                 <table class="table table-hover">
@@ -450,11 +483,11 @@
                 </div>
                 <!-- Forms
                     ================================================== -->
-                <div class="bs-docs-section">
+                <div class="bs-docs-section shadow-sm">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="page-header">
-                                <h1 id="forms">Forms</h1>
+                                <h2 id="forms">Forms</h2>
                             </div>
                         </div>
                     </div>
@@ -467,7 +500,7 @@
                                         <div class="form-group row">
                                             <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
                                             <div class="col-sm-10">
-                                                <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                                                <input type="text" class="form-control-plaintext" id="staticEmail" value="email@example.com">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -503,53 +536,12 @@
                                             <label for="exampleTextarea">Example textarea</label>
                                             <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputFile">File input</label>
-                                            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-                                            <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-                                        </div>
-                                        <fieldset class="form-group">
-                                            <legend>Radio buttons</legend>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                                                Option one is this and that—be sure to include why it's great
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                                                Option two can be something else and selecting it will deselect option one
-                                                </label>
-                                            </div>
-                                            <div class="form-check disabled">
-                                                <label class="form-check-label">
-                                                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
-                                                Option three is disabled
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                        <fieldset class="form-group">
-                                            <legend>Checkboxes</legend>
-                                            <div class="form-check">
-                                                <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="" checked="">
-                                                Option one is this and that—be sure to include why it's great
-                                                </label>
-                                            </div>
-                                            <div class="form-check disabled">
-                                                <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="" disabled="">
-                                                Option two is disabled
-                                                </label>
-                                            </div>
-                                        </fieldset>
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </fieldset>
                                 </form>
                             </div>
                         </div>
-                        <div class="col-lg-4 offset-lg-1">
+                        <div class="col-lg-6">
                             <form class="bs-component">
                                 <div class="form-group">
                                     <fieldset disabled="">
@@ -560,7 +552,7 @@
                                 <div class="form-group">
                                     <fieldset>
                                         <label class="control-label" for="readOnlyInput">Readonly input</label>
-                                        <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly="">
+                                        <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here..." readonly="">
                                     </fieldset>
                                 </div>
                                 <div class="form-group has-success">
@@ -600,6 +592,10 @@
                                     </div>
                                 </div>
                             </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
                             <div class="bs-component">
                                 <fieldset>
                                     <legend>Custom forms</legend>
@@ -636,12 +632,20 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label class="custom-file">
-                                        <input type="file" id="file2" class="custom-file-input">
-                                        <span class="custom-file-control"></span>
-                                        </label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="customRange3">Example range</label>
+                                        <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
                                     </div>
                                 </fieldset>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="bs-component">
                                 <fieldset class="form-group">
                                     <legend>Switches</legend>
                                     <div class="form-group">  
@@ -669,11 +673,11 @@
                 </div>
                 <!-- Navs
                     ================================================== -->
-                <div class="bs-docs-section">
+                <div class="bs-docs-section shadow-sm">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="page-header">
-                                <h1 id="navs">Navs</h1>
+                                <h2 id="navs">Navs</h2>
                             </div>
                         </div>
                     </div>
@@ -829,7 +833,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
-                            <h2 id="nav-breadcrumbs">Breadcrumbs</h2>
+                            <h3 id="nav-breadcrumbs">Breadcrumbs</h3>
                             <div class="bs-component">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item active">Home</li>
@@ -846,7 +850,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <h2 id="pagination">Pagination</h2>
+                            <h3 id="pagination">Pagination</h3>
                             <div class="bs-component">
                                 <div>
                                     <ul class="pagination pagination-sm">
@@ -935,17 +939,17 @@
                 </div>
                 <!-- Indicators
                     ================================================== -->
-                <div class="bs-docs-section">
+                <div class="bs-docs-section shadow-sm">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="page-header">
-                                <h1 id="indicators">Indicators</h1>
+                                <h2 id="indicators">Indicators</h2>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2>Alerts</h2>
+                            <h3>Alerts</h3>
                             <div class="bs-component">
                                 <div class="alert alert-dismissible alert-warning">
                                     <button type="button" class="close" data-dismiss="alert">×</button>
@@ -982,7 +986,7 @@
                         </div>
                     </div>
                     <div>
-                        <h2>Badges</h2>
+                        <h3>Badges</h3>
                         <div class="bs-component" style="margin-bottom: 40px;">
                             <span class="badge badge-primary">Primary</span>
                             <span class="badge badge-secondary">Secondary</span>
@@ -1007,11 +1011,11 @@
                 </div>
                 <!-- Progress
                     ================================================== -->
-                <div class="bs-docs-section">
+                <div class="bs-docs-section shadow-sm">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="page-header">
-                                <h1 id="progress">Progress</h1>
+                                <h2 id="progress">Progress</h2>
                             </div>
                             <h3 id="progress-basic">Basic</h3>
                             <div class="bs-component">
@@ -1071,11 +1075,11 @@
                 </div>
                 <!-- Containers
                     ================================================== -->
-                <div class="bs-docs-section">
+                <div class="bs-docs-section shadow-sm">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="page-header">
-                                <h1 id="containers">Containers</h1>
+                                <h2 id="containers">Containers</h2>
                             </div>
                             <div class="bs-component">
                                 <div class="jumbotron">
@@ -1092,7 +1096,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2>List groups</h2>
+                            <h3>List groups</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -1152,7 +1156,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2>Cards</h2>
+                            <h3>Cards</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -1194,6 +1198,13 @@
                                     </div>
                                 </div>
                                 <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Info card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                                <div class="card text-white bg-important mb-3" style="max-width: 20rem;">
                                     <div class="card-header">Header</div>
                                     <div class="card-body">
                                         <h4 class="card-title">Info card title</h4>
@@ -1260,6 +1271,13 @@
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     </div>
                                 </div>
+                                <div class="card border-important mb-3" style="max-width: 20rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body text-important">
+                                        <h4 class="card-title">Info card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
                                 <div class="card border-light mb-3" style="max-width: 20rem;">
                                     <div class="card-header">Header</div>
                                     <div class="card-body">
@@ -1313,12 +1331,151 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="bs-component">
+                        <h3>Card deck</h3>
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="https://fakeimg.pl/320x240/?text=Card" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://fakeimg.pl/320x240/?text=Card" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://fakeimg.pl/320x240/?text=Card" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://fakeimg.pl/320x240/?text=Card" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bs-component">
+                        <h3>Card group</h3>
+                        <div class="card-group">
+                            <div class="card">
+                                <img class="card-img-top" src="https://fakeimg.pl/320x240/?text=Card" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://fakeimg.pl/320x240/?text=Card" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://fakeimg.pl/320x240/?text=Card" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://fakeimg.pl/320x240/?text=Card" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bs-component">
+                        <h3>Card columns</h3>
+                        <div class="card-columns">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title that wraps to a new line</h5>
+                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                          </div>
+                          <div class="card p-3">
+                            <blockquote class="blockquote mb-0 card-body">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                              <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                  Someone famous in <cite title="Source Title">Source Title</cite>
+                                </small>
+                              </footer>
+                            </blockquote>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                          <div class="card bg-primary text-white text-center p-3">
+                            <blockquote class="blockquote mb-0">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                              <footer class="blockquote-footer">
+                                <small>
+                                  Someone famous in <cite title="Source Title">Source Title</cite>
+                                </small>
+                              </footer>
+                            </blockquote>
+                          </div>
+                          <div class="card text-center">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                          <div class="card p-3 text-right">
+                            <blockquote class="blockquote mb-0">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                              <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                  Someone famous in <cite title="Source Title">Source Title</cite>
+                                </small>
+                              </footer>
+                            </blockquote>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
 
 
-                <div class="bs-docs-section">
+                <div class="bs-docs-section shadow-sm">
                     <div class="page-header">
-                        <h1 id="navbars">ToolTips - By Pure CSS Components</h1>
+                        <h2 id="navbars">Tooltips</h2>
                     </div>
                     
                     <a href="#component-tooltip" role="tooltip" class="tooltip-top btn" aria-label="content displayed over ">Top</a>
@@ -1330,9 +1487,9 @@
 
                 <!-- Timeline
                     ================================================== -->
-                <div class="bs-docs-section">
-                    <div class="page-header mt-3">
-                        <h1 id="navbars">Timeline</h1>
+                <div class="bs-docs-section shadow-sm">
+                    <div class="page-header">
+                        <h2 id="navbars">Timeline</h2>
                     </div>
                     <section id="arn-timeline" class="arn-container">
                         <div class="arn-timeline-block">
@@ -1372,9 +1529,9 @@
                     </section>
                 </div>
 
-                <div class="bs-docs-section">
-                    <div class="page-header mt-3">
-                        <h3>Coloração de Texto</h3>
+                <div class="bs-docs-section shadow-sm">
+                    <div class="page-header">
+                        <h2>Coloração de Texto</h2>
                     </div>
 
                     <div class="row">
@@ -1410,9 +1567,9 @@
                     </div>
                 </div>
 
-                <div class="bs-docs-section">
-                    <div class="page-header mt-3">
-                        <h3>Backgrounds</h3>
+                <div class="bs-docs-section shadow-sm">
+                    <div class="page-header">
+                        <h2>Backgrounds</h2>
                     </div>
 
                     <div class="row">
@@ -1445,8 +1602,65 @@
                     </div>
                 </div>
 
-                <div class="bs-docs-section">
-                    <div class="page-header mt-3">
+                <div class="bs-docs-section shadow-sm">
+                    <div class="page-header">
+                        <h2>Shadows</h2>
+                    </div>
+
+                    <div class="bs-component">
+                        <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+                        <div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</div>
+                        <div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
+                        <div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</div>
+                    </div>
+
+                    <div class="bs-component">
+                        <div class="card-deck">
+                            <div class="card shadow-none">
+                                <img class="card-img-top" src="https://fakeimg.pl/320x240/?text=shadow" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card shadow-sm">
+                                <img class="card-img-top" src="https://fakeimg.pl/320x240/?text=shadow" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card shadow">
+                                <img class="card-img-top" src="https://fakeimg.pl/320x240/?text=shadow" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card shadow-lg">
+                                <img class="card-img-top" src="https://fakeimg.pl/320x240/?text=shadow" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bs-component">
+                        <button type="button" class="btn btn-outline-dark shadow-none">Button</button>
+                        <button type="button" class="btn btn-outline-dark shadow-sm">Button</button>
+                        <button type="button" class="btn btn-outline-dark shadow">Button</button>
+                        <button type="button" class="btn btn-outline-dark shadow-lg">Button</button>
+                    </div>
+                </div>
+
+                <div class="bs-docs-section shadow-sm">
+                    <div class="page-header">
                         <h3>Funky selectors</h3>
                     </div>
 
