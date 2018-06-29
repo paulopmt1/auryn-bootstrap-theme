@@ -5889,6 +5889,24 @@ Primary style
       margin-left: 1rem; }
   .arn-bootstrap .form-control:focus {
     border-color: initial; }
+  .arn-bootstrap .input-group-borderless {
+    border: 1px solid #ccc; }
+    .arn-bootstrap .input-group-borderless:focus-within {
+      border-color: #666; }
+    .arn-bootstrap .input-group-borderless .form-control {
+      padding-left: .5em; }
+      .arn-bootstrap .input-group-borderless .form-control::placeholder {
+        color: #ddd; }
+    .arn-bootstrap .input-group-borderless .form-control,
+    .arn-bootstrap .input-group-borderless .input-group-text {
+      background-color: transparent; }
+    .arn-bootstrap .input-group-borderless .input-group-text {
+      padding-left: 1em;
+      padding-right: .5em; }
+    .arn-bootstrap .input-group-borderless .form-control,
+    .arn-bootstrap .input-group-borderless .input-group-prepend,
+    .arn-bootstrap .input-group-borderless .input-group-text {
+      border: none; }
   @media print {
     .arn-bootstrap *,
     .arn-bootstrap *::before,

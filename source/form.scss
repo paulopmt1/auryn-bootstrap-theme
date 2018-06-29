@@ -1,3 +1,35 @@
 .form-control:focus {
 	border-color: initial;
 }
+
+.input-group-borderless {
+	border: 1px solid $gray-400;
+
+	&:focus-within {
+		border-color: $gray-700;
+	}
+
+	.form-control {
+		padding-left: .5em;
+
+		&::placeholder {
+			color: $gray-300;
+		}
+	}
+
+	.form-control,
+	.input-group-text {
+		background-color: transparent;
+	}
+
+	.input-group-text {
+		padding-left: 1em;
+		padding-right: .5em;
+	}
+
+	.form-control,
+	.input-group-prepend,
+	.input-group-text {
+		border: none;
+	}
+}
