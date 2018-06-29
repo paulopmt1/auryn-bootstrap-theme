@@ -5890,7 +5890,7 @@ Primary style
   .arn-bootstrap .form-control:focus {
     border-color: initial; }
   .arn-bootstrap .input-group-borderless {
-    border: 1px solid #ccc; }
+    border: 2px solid #ccc; }
     .arn-bootstrap .input-group-borderless:focus-within {
       border-color: #666; }
     .arn-bootstrap .input-group-borderless .form-control {
