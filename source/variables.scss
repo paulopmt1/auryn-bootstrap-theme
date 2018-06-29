@@ -112,3 +112,9 @@ $theme-colors: () !default;
 $theme-colors: map-merge((
   "important":    $purple,
 ), $theme-colors);
+
+// Card columns
+
+$card-spacer-y:                     .1rem !default;
+$card-columns-count:                5 !default;
+$card-columns-gap:                  .1rem !default;
