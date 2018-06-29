@@ -115,6 +115,10 @@ $theme-colors: map-merge((
 
 // Card columns
 
-$card-spacer-y:                     .1rem !default;
-$card-columns-count:                5 !default;
-$card-columns-gap:                  .1rem !default;
+$card-columns-sm-spacer-y:             .1rem !default;
+$card-columns-sm-count:                5 !default;
+$card-columns-sm-gap:                  .1rem !default;
+
+$card-columns-md-spacer-y:             .5rem !default;
+$card-columns-md-count:                4 !default;
+$card-columns-md-gap:                  .5rem !default;

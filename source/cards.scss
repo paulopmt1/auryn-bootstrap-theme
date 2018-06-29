@@ -6,3 +6,35 @@
         padding: 1.25rem;
     }
 }
+
+//
+// Columns
+//
+
+.card-columns {
+    &.card-columns-sm {
+        .card {
+            margin-bottom: $card-columns-sm-spacer-y;
+        }
+
+        @include media-breakpoint-up(sm) {
+            column-count: $card-columns-sm-count;
+            column-gap: $card-columns-sm-gap;
+            orphans: 1;
+            widows: 1;
+        }
+    }
+
+    &.card-columns-md {
+        .card {
+            margin-bottom: $card-columns-md-spacer-y;
+        }
+
+        @include media-breakpoint-up(sm) {
+            column-count: $card-columns-md-count;
+            column-gap: $card-columns-md-gap;
+            orphans: 1;
+            widows: 1;
+        }
+    }
+}

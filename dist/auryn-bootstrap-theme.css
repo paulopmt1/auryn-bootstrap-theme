@@ -5567,6 +5567,22 @@ Primary style
   .arn-bootstrap .card .card-body .form-groups {
     border: 1px dashed #eee;
     padding: 1.25rem; }
+  .arn-bootstrap .card-columns.card-columns-sm .card {
+    margin-bottom: 0.1rem; }
+  @media (min-width: 576px) {
+    .arn-bootstrap .card-columns.card-columns-sm {
+      column-count: 5;
+      column-gap: 0.1rem;
+      orphans: 1;
+      widows: 1; } }
+  .arn-bootstrap .card-columns.card-columns-md .card {
+    margin-bottom: 0.5rem; }
+  @media (min-width: 576px) {
+    .arn-bootstrap .card-columns.card-columns-md {
+      column-count: 4;
+      column-gap: 0.5rem;
+      orphans: 1;
+      widows: 1; } }
   .arn-bootstrap button:focus,
   .arn-bootstrap button:active,
   .arn-bootstrap .btn:focus,
