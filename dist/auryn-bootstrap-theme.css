@@ -6156,6 +6156,8 @@ Primary style
     transition: opacity 0.25s ease-in-out; }
   .arn-bootstrap .bg-gradient-primary {
     background: #08d linear-gradient(180deg, #269ae2, #08d) repeat-x !important; }
+  .arn-bootstrap .bg-transparent {
+    background-color: transparent !important; }
   .arn-bootstrap h1, .arn-bootstrap .h1,
   .arn-bootstrap h2, .arn-bootstrap .h2,
   .arn-bootstrap h3, .arn-bootstrap .h3,
