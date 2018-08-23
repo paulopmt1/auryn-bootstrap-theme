@@ -1522,9 +1522,26 @@
 
                 <div class="bs-docs-section shadow-sm">
                     <div class="page-header">
-                        <h2 id="navbars">Wizard</h2>
+                        <h2 id="navbars">Wizard-step</h2>
                     </div>
-                    <ul class="wizard">
+                    <ul class="wizard-step">
+                        <li class="completed">
+                        </li>
+                        <li ui-sref="secondStep" class="completed">
+                            <span data-translate>second step</span>
+                        </li>
+                        <li ui-sref="thirdStep" class="active">
+                            <span data-translate>third step</span>
+                        </li>
+                        <li ui-sref="fourthStep">
+                            <span data-translate>fourth step</span>
+                        </li>
+                        <li ui-sref="fifthStep">
+                            <span data-translate>fifth step</span>
+                        </li>
+                    </ul>
+
+                    <ul class="wizard-step-sm wizard-step-primary">
                         <li class="completed">
                         </li>
                         <li ui-sref="secondStep" class="completed">

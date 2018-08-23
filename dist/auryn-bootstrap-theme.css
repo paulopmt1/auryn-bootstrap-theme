@@ -6103,65 +6103,75 @@ Primary style
       width: 0;
       border: 7px solid transparent;
       border-right: 7px solid #fff; }
-  .arn-bootstrap ul.wizard,
-  .arn-bootstrap ul.wizard li {
+  .arn-bootstrap .wizard-step, .arn-bootstrap .wizard-step-sm {
     display: flex;
     margin: 0;
     padding: 0;
-    width: 100%; }
-  .arn-bootstrap ul.wizard {
+    width: 100%;
     counter-reset: num; }
-  .arn-bootstrap ul.wizard li {
-    align-items: center;
-    flex-direction: column;
-    position: relative; }
-  .arn-bootstrap ul.wizard li::before {
-    background: #eee;
-    border-radius: 50%;
-    content: '';
-    cursor: pointer;
-    height: 1.5em;
-    line-height: 1.5em;
-    text-align: center;
-    width: 1.5em;
-    z-index: 2; }
-  .arn-bootstrap ul.wizard li ~ li::after {
-    background-color: #43ac6a;
-    content: '';
-    height: 4px;
-    position: absolute;
-    right: 50%;
-    top: calc(0.75em - 2px);
-    width: 100%;
-    z-index: 1; }
-  .arn-bootstrap ul.wizard li.completed ~ li::after {
-    background-color: #eee;
-    content: '';
-    height: 4px;
-    position: absolute;
-    right: 50%;
-    top: calc(0.75em - 2px);
-    width: 100%;
-    z-index: 1; }
-  .arn-bootstrap ul.wizard li.active::before {
-    background: #43ac6a;
-    color: #fff; }
-  .arn-bootstrap ul.wizard li.active::after {
-    background: #008cba;
-    color: #fff; }
-  .arn-bootstrap ul.wizard span {
-    color: #333;
-    font-size: 12px;
-    word-break: break-all; }
-  .arn-bootstrap ul.wizard li.completed::before {
-    background: #43ac6a;
-    color: #fff; }
-  .arn-bootstrap ul.wizard li.completed span {
-    color: #000; }
-  .arn-bootstrap ul.wizard li.completed + li::after {
-    background: #43ac6a; }
-  .arn-bootstrap ul.wizard li.completed::after {
-    background: #43ac6a; }
+    .arn-bootstrap .wizard-step li, .arn-bootstrap .wizard-step-sm li {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+      position: relative; }
+      .arn-bootstrap .wizard-step li::before, .arn-bootstrap .wizard-step-sm li::before {
+        height: 1.5em;
+        line-height: 1.5em;
+        width: 1.5em;
+        background: #ddd;
+        border-radius: 50%;
+        content: '';
+        cursor: pointer;
+        text-align: center;
+        z-index: 2; }
+      .arn-bootstrap .wizard-step li ~ li::after, .arn-bootstrap .wizard-step-sm li ~ li::after {
+        top: 10px;
+        background-color: #43ac6a;
+        content: '';
+        height: 4px;
+        position: absolute;
+        right: 50%;
+        width: 100%;
+        z-index: 1; }
+      .arn-bootstrap .wizard-step li.active::before, .arn-bootstrap .wizard-step-sm li.active::before {
+        background: #43ac6a;
+        color: #fff; }
+      .arn-bootstrap .wizard-step li.active::after, .arn-bootstrap .wizard-step-sm li.active::after {
+        background: #008cba;
+        color: #fff; }
+      .arn-bootstrap .wizard-step li.completed ~ li::after, .arn-bootstrap .wizard-step-sm li.completed ~ li::after {
+        top: 10px;
+        background-color: #ddd;
+        content: '';
+        height: 4px;
+        position: absolute;
+        right: 50%;
+        width: 100%;
+        z-index: 1; }
+      .arn-bootstrap .wizard-step li.completed::before, .arn-bootstrap .wizard-step-sm li.completed::before {
+        background: #43ac6a;
+        color: #fff; }
+      .arn-bootstrap .wizard-step li.completed span, .arn-bootstrap .wizard-step-sm li.completed span {
+        color: #000; }
+      .arn-bootstrap .wizard-step li.completed + li::after, .arn-bootstrap .wizard-step-sm li.completed + li::after {
+        background: #43ac6a; }
+      .arn-bootstrap .wizard-step li.completed::after, .arn-bootstrap .wizard-step-sm li.completed::after {
+        background: #43ac6a; }
+    .arn-bootstrap .wizard-step span, .arn-bootstrap .wizard-step-sm span {
+      color: #222;
+      font-size: 12px;
+      word-break: break-all; }
+  .arn-bootstrap .wizard-step-sm li::before {
+    height: 1em;
+    line-height: 1em;
+    width: 1em; }
+  .arn-bootstrap .wizard-step-sm li ~ li::after {
+    top: 7px; }
+  .arn-bootstrap .wizard-step-sm li.completed ~ li::after {
+    top: 7px; }
   .arn-bootstrap [class*="tooltip"] {
     position: relative;
     text-decoration: none; }

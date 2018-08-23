@@ -1,84 +1,119 @@
-ul.wizard,
-ul.wizard li {
+$color-step: $success;
+
+@mixin sizeStep($size) {
+	height: $size;
+	line-height: $size;
+	width: $size;
+}
+
+@mixin calcTopStep($value) {
+	top: 12px - $value;
+}
+
+%wizard-main-steps {
 	display: flex;
 	margin: 0;
 	padding: 0;
 	width: 100%;
-}
-
-ul.wizard {
 	counter-reset: num;
+
+	li {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+
+		&::before {
+			@include sizeStep(1.5em);
+			background: $secondary;
+			border-radius: 50%;
+			content: '';
+			cursor: pointer;
+			text-align: center;
+			z-index: 2;
+		}
+
+		~ li::after {
+			@include calcTopStep(2px);
+			background-color: $color-step;
+			content: '';
+			height: 4px;
+			position: absolute;
+			right: 50%;
+			width: 100%;
+			z-index: 1;
+		}
+
+		&.active::before {
+			background: $color-step;
+			color: $white;
+		}
+
+		&.active::after {
+			background: $primary;
+			color: $white;
+		}
+
+		&.completed {
+			~ li::after {
+				@include calcTopStep(2px);
+				background-color: $secondary;
+				content: '';
+				height: 4px;
+				position: absolute;
+				right: 50%;
+				width: 100%;
+				z-index: 1;
+			}
+
+			&::before {
+				background: $color-step;
+				color: $white;
+			}
+
+			span {
+				color: $black;
+			}
+
+			+ li::after {
+				background: $color-step;
+			}
+
+			&::after {
+				background: $color-step;
+			}
+		}
+
+	}
+
+	span {
+		color: $gray-900;
+		font-size: 12px;
+		word-break: break-all;
+	}
 }
 
-ul.wizard li {
-	align-items: center;
-	flex-direction: column;
-	position: relative;
+.wizard-step {
+	@extend %wizard-main-steps;
 }
 
-ul.wizard li::before {
-	background: $gray-200;
-	border-radius: 50%;
-	content: '';
-	cursor: pointer;
-	height: 1.5em;
-	line-height: 1.5em;
-	text-align: center;
-	width: 1.5em;
-	z-index: 2;
-}
+.wizard-step-sm {
+	@extend %wizard-main-steps;
 
-ul.wizard li ~ li::after {
-	background-color: $success;
-	content: '';
-	height: 4px;
-	position: absolute;
-	right: 50%;
-	top: calc(0.75em - 2px);
-	width: 100%;
-	z-index: 1;
-}
-
-ul.wizard li.completed ~ li::after {
-	background-color: $gray-200;
-	content: '';
-	height: 4px;
-	position: absolute;
-	right: 50%;
-	top: calc(0.75em - 2px);
-	width: 100%;
-	z-index: 1;
-}
-
-ul.wizard li.active::before {
-	background: $success;
-	color: $white;
-}
-
-ul.wizard li.active::after {
-	background: $primary;
-	color: $white;
-}
-
-ul.wizard span {
-	color: #333;
-	font-size: 12px;
-	word-break: break-all;
-}
-
-ul.wizard li.completed::before {
-	background: $success;
-	color: $white;
-}
-
-ul.wizard li.completed span {
-	color: $black;
-}
-
-ul.wizard li.completed + li::after {
-	background: $success;
-}
-
-ul.wizard li.completed::after {
-	background: $success;
+	li {
+		&::before {
+			@include sizeStep(1em);
+		}
+		~ li::after {
+			@include calcTopStep(5px);
+		}
+		&.completed {
+			~ li::after {
+				@include calcTopStep(5px);
+			}
+		}
+	}
 }
