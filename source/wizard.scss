@@ -1,0 +1,84 @@
+ul.wizard,
+ul.wizard li {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+ul.wizard {
+	counter-reset: num;
+}
+
+ul.wizard li {
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+ul.wizard li::before {
+	background: $gray-200;
+	border-radius: 50%;
+	content: '';
+	cursor: pointer;
+	height: 1.5em;
+	line-height: 1.5em;
+	text-align: center;
+	width: 1.5em;
+	z-index: 2;
+}
+
+ul.wizard li ~ li::after {
+	background-color: $success;
+	content: '';
+	height: 4px;
+	position: absolute;
+	right: 50%;
+	top: calc(0.75em - 2px);
+	width: 100%;
+	z-index: 1;
+}
+
+ul.wizard li.completed ~ li::after {
+	background-color: $gray-200;
+	content: '';
+	height: 4px;
+	position: absolute;
+	right: 50%;
+	top: calc(0.75em - 2px);
+	width: 100%;
+	z-index: 1;
+}
+
+ul.wizard li.active::before {
+	background: $success;
+	color: $white;
+}
+
+ul.wizard li.active::after {
+	background: $primary;
+	color: $white;
+}
+
+ul.wizard span {
+	color: #333;
+	font-size: 12px;
+	word-break: break-all;
+}
+
+ul.wizard li.completed::before {
+	background: $success;
+	color: $white;
+}
+
+ul.wizard li.completed span {
+	color: $black;
+}
+
+ul.wizard li.completed + li::after {
+	background: $success;
+}
+
+ul.wizard li.completed::after {
+	background: $success;
+}
