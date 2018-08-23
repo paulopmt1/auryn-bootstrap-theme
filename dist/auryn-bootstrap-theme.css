@@ -6129,7 +6129,7 @@ Primary style
         z-index: 2; }
       .arn-bootstrap .wizard-step li ~ li::after, .arn-bootstrap .wizard-step-sm li ~ li::after {
         top: 10px;
-        background-color: #43ac6a;
+        background: #ddd;
         content: '';
         height: 4px;
         position: absolute;
@@ -6140,7 +6140,7 @@ Primary style
         background: #43ac6a;
         color: #fff; }
       .arn-bootstrap .wizard-step li.active::after, .arn-bootstrap .wizard-step-sm li.active::after {
-        background: #008cba;
+        background: #43ac6a;
         color: #fff; }
       .arn-bootstrap .wizard-step li.completed ~ li::after, .arn-bootstrap .wizard-step-sm li.completed ~ li::after {
         top: 10px;

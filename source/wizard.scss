@@ -38,7 +38,7 @@ $color-step: $success;
 
 		~ li::after {
 			@include calcTopStep(2px);
-			background-color: $color-step;
+			background: $secondary;
 			content: '';
 			height: 4px;
 			position: absolute;
@@ -53,7 +53,7 @@ $color-step: $success;
 		}
 
 		&.active::after {
-			background: $primary;
+			background: $color-step;
 			color: $white;
 		}
 

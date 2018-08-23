@@ -1,6 +1,6 @@
 # Auryn-bootstrap-theme
 
-## Current version **1.4.2**
+## Current version **1.4.3**
 
 ### Version structe x.y.z
 
