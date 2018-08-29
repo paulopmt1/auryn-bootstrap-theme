@@ -1,5 +1,3 @@
-$color-step: $success;
-
 @mixin sizeStep($size) {
 	height: $size;
 	line-height: $size;
@@ -10,12 +8,42 @@ $color-step: $success;
 	top: 12px - $value;
 }
 
+@mixin wizardColor($color-step) {
+
+	li {
+
+		&.active::before {
+			background: $color-step;
+			color: $white;
+		}
+
+		&.active::after {
+			background: $color-step;
+			color: $white;
+		}
+
+		&.completed {
+			&::before {
+				background: $color-step;
+				color: $white;
+			}
+
+			+ li::after {
+				background: $color-step;
+			}
+
+			&::after {
+				background: $color-step;
+			}
+		}
+	}
+}
+
 %wizard-main-steps {
 	display: flex;
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	counter-reset: num;
 
 	li {
 		display: flex;
@@ -46,21 +74,12 @@ $color-step: $success;
 			width: 100%;
 			z-index: 1;
 		}
-
-		&.active::before {
-			background: $color-step;
-			color: $white;
-		}
-
-		&.active::after {
-			background: $color-step;
-			color: $white;
-		}
+		
 
 		&.completed {
 			~ li::after {
 				@include calcTopStep(2px);
-				background-color: $secondary;
+				background: $secondary;
 				content: '';
 				height: 4px;
 				position: absolute;
@@ -69,24 +88,10 @@ $color-step: $success;
 				z-index: 1;
 			}
 
-			&::before {
-				background: $color-step;
-				color: $white;
-			}
-
 			span {
 				color: $black;
 			}
-
-			+ li::after {
-				background: $color-step;
-			}
-
-			&::after {
-				background: $color-step;
-			}
 		}
-
 	}
 
 	span {
@@ -94,6 +99,8 @@ $color-step: $success;
 		font-size: 12px;
 		word-break: break-all;
 	}
+
+	@include wizardColor($success);
 }
 
 .wizard-step {
@@ -115,5 +122,11 @@ $color-step: $success;
 				@include calcTopStep(5px);
 			}
 		}
+	}
+}
+
+@each $color, $value in $theme-colors {
+	.wizard-#{$color} {
+		@include wizardColor($value);
 	}
 }
