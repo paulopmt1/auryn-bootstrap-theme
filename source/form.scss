@@ -10,7 +10,16 @@
 	}
 
 	.form-control {
+		height: 2.15625rem;
 		padding-left: .5em;
+
+		&.form-control-lg {
+			height: 2.7578125rem;
+		}
+
+		&.form-control-sm {
+			height: 1.73046875rem;
+		}
 
 		&::placeholder {
 			color: $gray-300;

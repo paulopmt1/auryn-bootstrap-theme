@@ -6135,7 +6135,12 @@ Primary style
     .arn-bootstrap .input-group-borderless:focus-within {
       border-color: #666; }
     .arn-bootstrap .input-group-borderless .form-control {
+      height: 2.15625rem;
       padding-left: .5em; }
+      .arn-bootstrap .input-group-borderless .form-control.form-control-lg {
+        height: 2.7578125rem; }
+      .arn-bootstrap .input-group-borderless .form-control.form-control-sm {
+        height: 1.73046875rem; }
       .arn-bootstrap .input-group-borderless .form-control::placeholder {
         color: #ddd; }
     .arn-bootstrap .input-group-borderless .form-control,
