@@ -6293,15 +6293,15 @@ Primary style
       width: 0;
       border: 7px solid transparent;
       border-right: 7px solid #fff; }
-  .arn-bootstrap [class*="tooltip"] {
+  .arn-bootstrap [class*="arn-tooltip"] {
     position: relative;
     text-decoration: none; }
-  .arn-bootstrap [class*="tooltip"]:after,
-  .arn-bootstrap [class*="tooltip"]:before {
+  .arn-bootstrap [class*="arn-tooltip"]:after,
+  .arn-bootstrap [class*="arn-tooltip"]:before {
     position: absolute;
     z-index: 100;
     opacity: 0; }
-  .arn-bootstrap [class*="tooltip"]:after {
+  .arn-bootstrap [class*="arn-tooltip"]:after {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
     content: attr(aria-label);
     height: 25px;
@@ -6314,91 +6314,91 @@ Primary style
     border-radius: 4px;
     text-shadow: 0 0 5px #000;
     white-space: nowrap; }
-  .arn-bootstrap [class*="tooltip"]:before {
+  .arn-bootstrap [class*="arn-tooltip"]:before {
     content: '';
     width: 0;
     height: 0;
     border-width: 6px;
     border-style: solid; }
-  .arn-bootstrap [class*="tooltip"]:hover:after,
-  .arn-bootstrap [class*="tooltip"]:focus:after,
-  .arn-bootstrap [class*="tooltip"]:hover:before,
-  .arn-bootstrap [class*="tooltip"]:focus:before {
+  .arn-bootstrap [class*="arn-tooltip"]:hover:after,
+  .arn-bootstrap [class*="arn-tooltip"]:focus:after,
+  .arn-bootstrap [class*="arn-tooltip"]:hover:before,
+  .arn-bootstrap [class*="arn-tooltip"]:focus:before {
     opacity: 1; }
-  .arn-bootstrap .tooltip-top:after,
-  .arn-bootstrap .tooltip-top:before {
+  .arn-bootstrap .arn-tooltip-top:after,
+  .arn-bootstrap .arn-tooltip-top:before {
     transition: bottom 0.25s ease-in-out;
     bottom: 90%;
     left: -9999px;
     margin-bottom: 12px; }
-  .arn-bootstrap .tooltip-top:before {
+  .arn-bootstrap .arn-tooltip-top:before {
     border-color: #222 transparent transparent transparent;
     margin-bottom: 0; }
-  .arn-bootstrap .tooltip-top:hover:after,
-  .arn-bootstrap .tooltip-top:focus:after,
-  .arn-bootstrap .tooltip-top:hover:before,
-  .arn-bootstrap .tooltip-top:focus:before {
+  .arn-bootstrap .arn-tooltip-top:hover:after,
+  .arn-bootstrap .arn-tooltip-top:focus:after,
+  .arn-bootstrap .arn-tooltip-top:hover:before,
+  .arn-bootstrap .arn-tooltip-top:focus:before {
     bottom: 85%;
     left: 0; }
-  .arn-bootstrap .tooltip-top:hover:before,
-  .arn-bootstrap .tooltip-top:focus:before {
+  .arn-bootstrap .arn-tooltip-top:hover:before,
+  .arn-bootstrap .arn-tooltip-top:focus:before {
     left: 15px; }
-  .arn-bootstrap .tooltip-bottom:after,
-  .arn-bootstrap .tooltip-bottom:before {
+  .arn-bootstrap .arn-tooltip-bottom:after,
+  .arn-bootstrap .arn-tooltip-bottom:before {
     transition: top 0.25s ease-in-out;
     top: 90%;
     left: -9999px;
     margin-top: 12px; }
-  .arn-bootstrap .tooltip-bottom:before {
+  .arn-bootstrap .arn-tooltip-bottom:before {
     border-color: transparent transparent #222 transparent;
     margin-top: 0; }
-  .arn-bootstrap .tooltip-bottom:hover:after,
-  .arn-bootstrap .tooltip-bottom:focus:after,
-  .arn-bootstrap .tooltip-bottom:hover:before,
-  .arn-bootstrap .tooltip-bottom:focus:before {
+  .arn-bootstrap .arn-tooltip-bottom:hover:after,
+  .arn-bootstrap .arn-tooltip-bottom:focus:after,
+  .arn-bootstrap .arn-tooltip-bottom:hover:before,
+  .arn-bootstrap .arn-tooltip-bottom:focus:before {
     top: 85%;
     left: 0; }
-  .arn-bootstrap .tooltip-bottom:hover:before,
-  .arn-bootstrap .tooltip-bottom:focus:before {
+  .arn-bootstrap .arn-tooltip-bottom:hover:before,
+  .arn-bootstrap .arn-tooltip-bottom:focus:before {
     left: 15px; }
-  .arn-bootstrap .tooltip-right:after,
-  .arn-bootstrap .tooltip-right:before {
+  .arn-bootstrap .arn-tooltip-right:after,
+  .arn-bootstrap .arn-tooltip-right:before {
     transition: left 0.25s ease-in-out;
     top: -9999px;
     left: 96%;
     margin-left: 12px; }
-  .arn-bootstrap .tooltip-right:before {
+  .arn-bootstrap .arn-tooltip-right:before {
     border-color: transparent #222 transparent transparent;
     margin-left: 0; }
-  .arn-bootstrap .tooltip-right:hover:after,
-  .arn-bootstrap .tooltip-right:focus:after,
-  .arn-bootstrap .tooltip-right:hover:before,
-  .arn-bootstrap .tooltip-right:focus:before {
+  .arn-bootstrap .arn-tooltip-right:hover:after,
+  .arn-bootstrap .arn-tooltip-right:focus:after,
+  .arn-bootstrap .arn-tooltip-right:hover:before,
+  .arn-bootstrap .arn-tooltip-right:focus:before {
     left: 95%;
     top: 0; }
-  .arn-bootstrap .tooltip-right:hover:before,
-  .arn-bootstrap .tooltip-right:focus:before {
+  .arn-bootstrap .arn-tooltip-right:hover:before,
+  .arn-bootstrap .arn-tooltip-right:focus:before {
     top: 7px; }
-  .arn-bootstrap .tooltip-left:after,
-  .arn-bootstrap .tooltip-left:before {
+  .arn-bootstrap .arn-tooltip-left:after,
+  .arn-bootstrap .arn-tooltip-left:before {
     transition: right 0.25s ease-in-out;
     top: -9999px;
     right: 96%;
     margin-right: 12px; }
-  .arn-bootstrap .tooltip-left:before {
+  .arn-bootstrap .arn-tooltip-left:before {
     border-color: transparent transparent transparent #222;
     margin-right: 0; }
-  .arn-bootstrap .tooltip-left:hover:after,
-  .arn-bootstrap .tooltip-left:focus:after,
-  .arn-bootstrap .tooltip-left:hover:before,
-  .arn-bootstrap .tooltip-left:focus:before {
+  .arn-bootstrap .arn-tooltip-left:hover:after,
+  .arn-bootstrap .arn-tooltip-left:focus:after,
+  .arn-bootstrap .arn-tooltip-left:hover:before,
+  .arn-bootstrap .arn-tooltip-left:focus:before {
     right: 95%;
     top: 0; }
-  .arn-bootstrap .tooltip-left:hover:before,
-  .arn-bootstrap .tooltip-left:focus:before {
+  .arn-bootstrap .arn-tooltip-left:hover:before,
+  .arn-bootstrap .arn-tooltip-left:focus:before {
     top: 7px; }
-  .arn-bootstrap [class*="tooltip"]:after,
-  .arn-bootstrap [class*="tooltip"]:before {
+  .arn-bootstrap [class*="arn-tooltip"]:after,
+  .arn-bootstrap [class*="arn-tooltip"]:before {
     transition: opacity 0.25s ease-in-out; }
   .arn-bootstrap .bg-gradient-primary {
     background: #08d linear-gradient(180deg, #269ae2, #08d) repeat-x !important; }
