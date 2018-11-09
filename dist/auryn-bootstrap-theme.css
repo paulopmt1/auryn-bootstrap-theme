@@ -6400,6 +6400,8 @@ Primary style
         width: 100%; }
     .arn-bootstrap .carousel-indicators .active {
       background-color: #fff; }
+      .arn-bootstrap .carousel-indicators .active li {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
   .arn-bootstrap .carousel-caption {
     bottom: 20px;
     color: #fff;
