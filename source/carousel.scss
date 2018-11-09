@@ -155,7 +155,7 @@
 
   li {
     background-color: rgba($carousel-indicator-active-bg, .5);
-    box-shadow: $carousel-indicator-box-shadow;
+    box-shadow: $carousel-indicator-box-shadow !important;
     border-radius: $carousel-indicator-border-radius;
     cursor: pointer;
     flex: 0 1 auto;
