@@ -122,3 +122,19 @@ $card-columns-sm-gap:                  .1rem !default;
 $card-columns-md-spacer-y:             .5rem !default;
 $card-columns-md-count:                4 !default;
 $card-columns-md-gap:                  .5rem !default;
+
+// Carousel
+
+$carousel-control-color:            $white !default;
+$carousel-control-width:            15% !default;
+$carousel-control-opacity:          .5 !default;
+
+$carousel-indicator-width:          2rem !default;
+$carousel-indicator-height:         2rem !default;
+$carousel-indicator-spacer:         .5rem !default;
+$carousel-indicator-active-bg:      $white !default;
+$carousel-indicator-box-shadow:     0 1px 1px rgba(black, .25) !default;
+$carousel-indicator-border-radius:  50% !default;
+
+$carousel-caption-width:            70% !default;
+$carousel-caption-color:            $white !default;
