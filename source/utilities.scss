@@ -5,3 +5,24 @@
 .bg-transparent {
     background-color: transparent !important;
 }
+
+@mixin raise-on-hover($raised-shadow) {
+    box-shadow: 0 0 0 transparent;
+    transition: box-shadow 0.3s ease-in-out !important;
+
+    &:hover {
+        box-shadow: $raised-shadow !important;
+    }
+}
+
+.raise-on-hover {
+    @include raise-on-hover($box-shadow);
+}
+
+.raise-on-hover-sm {
+    @include raise-on-hover($box-shadow-sm);
+}
+
+.raise-on-hover-lg {
+    @include raise-on-hover($box-shadow-lg);
+}
