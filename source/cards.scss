@@ -38,3 +38,99 @@
         }
     }
 }
+
+@mixin hover-card($base-height, $thumb-height, $content-height, $hovered-thumb-height: 50%, $hovered-content-height: 50%) {
+  position: relative;
+  height: $base-height;
+
+  .card-body {
+    transition: height .5s ease-in-out, max-height .5s ease-in-out;
+    transition-delay: 2s;
+  }
+
+  .card-img-top {
+    background-color: $hover-card-overlay-bg;
+    height: $thumb-height;
+    max-height: $thumb-height;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+  }
+
+  .card-body {
+    height: $content-height;
+    max-height: $content-height;
+    
+    .hovered-data {
+      opacity: 0;
+    }
+  }
+
+  .card-overlay {
+    align-items: center;
+    background-color: rgba($hover-card-overlay-bg, .5);
+    display: flex;
+    height: 0;
+    opacity: 0;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    transition: height .25s ease-in-out, opacity 1s 0s ease-in-out;
+  }
+
+  &:hover {
+    .card-img-top {
+      object-fit: contain;
+    }
+
+    .card-img-top,
+    .card-overlay {
+      height: $hovered-thumb-height;
+      max-height: $hovered-thumb-height;
+    }
+
+    .card-overlay {
+      opacity: 1;
+    }
+
+    .card-body {
+      height: $hovered-content-height;
+      max-height: $hovered-content-height;
+      overflow: hidden;
+      
+      .text-truncate {
+        overflow: initial;
+        text-overflow: initial;
+        white-space: initial;
+      }
+
+      .hovered-data {
+        opacity: 1;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.hover-card {
+  @include hover-card($hover-card-base-height, $hover-card-thumb-height, $hover-card-content-height);
+}
+
+.hover-card-reversible {
+  @include hover-card($hover-card-base-height, $hover-card-thumb-height, $hover-card-content-height, $hover-card-content-height, $hover-card-thumb-height);
+}
+
+.hover-card-sm {
+  @include hover-card($hover-card-sm-base-height, $hover-card-sm-thumb-height, $hover-card-sm-content-height);
+}
+
+.hover-card-sm-reversible {
+  @include hover-card($hover-card-sm-base-height, $hover-card-sm-thumb-height, $hover-card-sm-content-height, $hover-card-sm-content-height, $hover-card-sm-thumb-height);
+}
+
+.hover-card-lg {
+  @include hover-card($hover-card-lg-base-height, $hover-card-lg-thumb-height, $hover-card-lg-content-height);
+}
+
+.hover-card-lg-reversible {
+  @include hover-card($hover-card-lg-base-height, $hover-card-lg-thumb-height, $hover-card-lg-content-height, $hover-card-lg-content-height, $hover-card-lg-thumb-height);
+}

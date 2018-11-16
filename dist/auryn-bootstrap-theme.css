@@ -5483,6 +5483,282 @@ Primary style
       column-gap: 0.5rem;
       orphans: 1;
       widows: 1; } }
+  .arn-bootstrap .hover-card {
+    position: relative;
+    height: 25em; }
+    .arn-bootstrap .hover-card .card-body {
+      transition: height .5s ease-in-out, max-height .5s ease-in-out;
+      transition-delay: 2s; }
+    .arn-bootstrap .hover-card .card-img-top {
+      background-color: #333;
+      height: 76%;
+      max-height: 76%;
+      object-fit: cover;
+      transition: all .5s ease-in-out; }
+    .arn-bootstrap .hover-card .card-body {
+      height: 24%;
+      max-height: 24%; }
+      .arn-bootstrap .hover-card .card-body .hovered-data {
+        opacity: 0; }
+    .arn-bootstrap .hover-card .card-overlay {
+      align-items: center;
+      background-color: rgba(51, 51, 51, 0.5);
+      display: flex;
+      height: 0;
+      opacity: 0;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      transition: height .25s ease-in-out, opacity 1s 0s ease-in-out; }
+    .arn-bootstrap .hover-card:hover .card-img-top {
+      object-fit: contain; }
+    .arn-bootstrap .hover-card:hover .card-img-top,
+    .arn-bootstrap .hover-card:hover .card-overlay {
+      height: 50%;
+      max-height: 50%; }
+    .arn-bootstrap .hover-card:hover .card-overlay {
+      opacity: 1; }
+    .arn-bootstrap .hover-card:hover .card-body {
+      height: 50%;
+      max-height: 50%;
+      overflow: hidden; }
+      .arn-bootstrap .hover-card:hover .card-body .text-truncate {
+        overflow: initial;
+        text-overflow: initial;
+        white-space: initial; }
+      .arn-bootstrap .hover-card:hover .card-body .hovered-data {
+        opacity: 1;
+        overflow: hidden; }
+  .arn-bootstrap .hover-card-reversible {
+    position: relative;
+    height: 25em; }
+    .arn-bootstrap .hover-card-reversible .card-body {
+      transition: height .5s ease-in-out, max-height .5s ease-in-out;
+      transition-delay: 2s; }
+    .arn-bootstrap .hover-card-reversible .card-img-top {
+      background-color: #333;
+      height: 76%;
+      max-height: 76%;
+      object-fit: cover;
+      transition: all .5s ease-in-out; }
+    .arn-bootstrap .hover-card-reversible .card-body {
+      height: 24%;
+      max-height: 24%; }
+      .arn-bootstrap .hover-card-reversible .card-body .hovered-data {
+        opacity: 0; }
+    .arn-bootstrap .hover-card-reversible .card-overlay {
+      align-items: center;
+      background-color: rgba(51, 51, 51, 0.5);
+      display: flex;
+      height: 0;
+      opacity: 0;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      transition: height .25s ease-in-out, opacity 1s 0s ease-in-out; }
+    .arn-bootstrap .hover-card-reversible:hover .card-img-top {
+      object-fit: contain; }
+    .arn-bootstrap .hover-card-reversible:hover .card-img-top,
+    .arn-bootstrap .hover-card-reversible:hover .card-overlay {
+      height: 24%;
+      max-height: 24%; }
+    .arn-bootstrap .hover-card-reversible:hover .card-overlay {
+      opacity: 1; }
+    .arn-bootstrap .hover-card-reversible:hover .card-body {
+      height: 76%;
+      max-height: 76%;
+      overflow: hidden; }
+      .arn-bootstrap .hover-card-reversible:hover .card-body .text-truncate {
+        overflow: initial;
+        text-overflow: initial;
+        white-space: initial; }
+      .arn-bootstrap .hover-card-reversible:hover .card-body .hovered-data {
+        opacity: 1;
+        overflow: hidden; }
+  .arn-bootstrap .hover-card-sm {
+    position: relative;
+    height: 22.5em; }
+    .arn-bootstrap .hover-card-sm .card-body {
+      transition: height .5s ease-in-out, max-height .5s ease-in-out;
+      transition-delay: 2s; }
+    .arn-bootstrap .hover-card-sm .card-img-top {
+      background-color: #333;
+      height: 74%;
+      max-height: 74%;
+      object-fit: cover;
+      transition: all .5s ease-in-out; }
+    .arn-bootstrap .hover-card-sm .card-body {
+      height: 26%;
+      max-height: 26%; }
+      .arn-bootstrap .hover-card-sm .card-body .hovered-data {
+        opacity: 0; }
+    .arn-bootstrap .hover-card-sm .card-overlay {
+      align-items: center;
+      background-color: rgba(51, 51, 51, 0.5);
+      display: flex;
+      height: 0;
+      opacity: 0;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      transition: height .25s ease-in-out, opacity 1s 0s ease-in-out; }
+    .arn-bootstrap .hover-card-sm:hover .card-img-top {
+      object-fit: contain; }
+    .arn-bootstrap .hover-card-sm:hover .card-img-top,
+    .arn-bootstrap .hover-card-sm:hover .card-overlay {
+      height: 50%;
+      max-height: 50%; }
+    .arn-bootstrap .hover-card-sm:hover .card-overlay {
+      opacity: 1; }
+    .arn-bootstrap .hover-card-sm:hover .card-body {
+      height: 50%;
+      max-height: 50%;
+      overflow: hidden; }
+      .arn-bootstrap .hover-card-sm:hover .card-body .text-truncate {
+        overflow: initial;
+        text-overflow: initial;
+        white-space: initial; }
+      .arn-bootstrap .hover-card-sm:hover .card-body .hovered-data {
+        opacity: 1;
+        overflow: hidden; }
+  .arn-bootstrap .hover-card-sm-reversible {
+    position: relative;
+    height: 22.5em; }
+    .arn-bootstrap .hover-card-sm-reversible .card-body {
+      transition: height .5s ease-in-out, max-height .5s ease-in-out;
+      transition-delay: 2s; }
+    .arn-bootstrap .hover-card-sm-reversible .card-img-top {
+      background-color: #333;
+      height: 74%;
+      max-height: 74%;
+      object-fit: cover;
+      transition: all .5s ease-in-out; }
+    .arn-bootstrap .hover-card-sm-reversible .card-body {
+      height: 26%;
+      max-height: 26%; }
+      .arn-bootstrap .hover-card-sm-reversible .card-body .hovered-data {
+        opacity: 0; }
+    .arn-bootstrap .hover-card-sm-reversible .card-overlay {
+      align-items: center;
+      background-color: rgba(51, 51, 51, 0.5);
+      display: flex;
+      height: 0;
+      opacity: 0;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      transition: height .25s ease-in-out, opacity 1s 0s ease-in-out; }
+    .arn-bootstrap .hover-card-sm-reversible:hover .card-img-top {
+      object-fit: contain; }
+    .arn-bootstrap .hover-card-sm-reversible:hover .card-img-top,
+    .arn-bootstrap .hover-card-sm-reversible:hover .card-overlay {
+      height: 26%;
+      max-height: 26%; }
+    .arn-bootstrap .hover-card-sm-reversible:hover .card-overlay {
+      opacity: 1; }
+    .arn-bootstrap .hover-card-sm-reversible:hover .card-body {
+      height: 74%;
+      max-height: 74%;
+      overflow: hidden; }
+      .arn-bootstrap .hover-card-sm-reversible:hover .card-body .text-truncate {
+        overflow: initial;
+        text-overflow: initial;
+        white-space: initial; }
+      .arn-bootstrap .hover-card-sm-reversible:hover .card-body .hovered-data {
+        opacity: 1;
+        overflow: hidden; }
+  .arn-bootstrap .hover-card-lg {
+    position: relative;
+    height: 27.5em; }
+    .arn-bootstrap .hover-card-lg .card-body {
+      transition: height .5s ease-in-out, max-height .5s ease-in-out;
+      transition-delay: 2s; }
+    .arn-bootstrap .hover-card-lg .card-img-top {
+      background-color: #333;
+      height: 78%;
+      max-height: 78%;
+      object-fit: cover;
+      transition: all .5s ease-in-out; }
+    .arn-bootstrap .hover-card-lg .card-body {
+      height: 22%;
+      max-height: 22%; }
+      .arn-bootstrap .hover-card-lg .card-body .hovered-data {
+        opacity: 0; }
+    .arn-bootstrap .hover-card-lg .card-overlay {
+      align-items: center;
+      background-color: rgba(51, 51, 51, 0.5);
+      display: flex;
+      height: 0;
+      opacity: 0;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      transition: height .25s ease-in-out, opacity 1s 0s ease-in-out; }
+    .arn-bootstrap .hover-card-lg:hover .card-img-top {
+      object-fit: contain; }
+    .arn-bootstrap .hover-card-lg:hover .card-img-top,
+    .arn-bootstrap .hover-card-lg:hover .card-overlay {
+      height: 50%;
+      max-height: 50%; }
+    .arn-bootstrap .hover-card-lg:hover .card-overlay {
+      opacity: 1; }
+    .arn-bootstrap .hover-card-lg:hover .card-body {
+      height: 50%;
+      max-height: 50%;
+      overflow: hidden; }
+      .arn-bootstrap .hover-card-lg:hover .card-body .text-truncate {
+        overflow: initial;
+        text-overflow: initial;
+        white-space: initial; }
+      .arn-bootstrap .hover-card-lg:hover .card-body .hovered-data {
+        opacity: 1;
+        overflow: hidden; }
+  .arn-bootstrap .hover-card-lg-reversible {
+    position: relative;
+    height: 27.5em; }
+    .arn-bootstrap .hover-card-lg-reversible .card-body {
+      transition: height .5s ease-in-out, max-height .5s ease-in-out;
+      transition-delay: 2s; }
+    .arn-bootstrap .hover-card-lg-reversible .card-img-top {
+      background-color: #333;
+      height: 78%;
+      max-height: 78%;
+      object-fit: cover;
+      transition: all .5s ease-in-out; }
+    .arn-bootstrap .hover-card-lg-reversible .card-body {
+      height: 22%;
+      max-height: 22%; }
+      .arn-bootstrap .hover-card-lg-reversible .card-body .hovered-data {
+        opacity: 0; }
+    .arn-bootstrap .hover-card-lg-reversible .card-overlay {
+      align-items: center;
+      background-color: rgba(51, 51, 51, 0.5);
+      display: flex;
+      height: 0;
+      opacity: 0;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      transition: height .25s ease-in-out, opacity 1s 0s ease-in-out; }
+    .arn-bootstrap .hover-card-lg-reversible:hover .card-img-top {
+      object-fit: contain; }
+    .arn-bootstrap .hover-card-lg-reversible:hover .card-img-top,
+    .arn-bootstrap .hover-card-lg-reversible:hover .card-overlay {
+      height: 22%;
+      max-height: 22%; }
+    .arn-bootstrap .hover-card-lg-reversible:hover .card-overlay {
+      opacity: 1; }
+    .arn-bootstrap .hover-card-lg-reversible:hover .card-body {
+      height: 78%;
+      max-height: 78%;
+      overflow: hidden; }
+      .arn-bootstrap .hover-card-lg-reversible:hover .card-body .text-truncate {
+        overflow: initial;
+        text-overflow: initial;
+        white-space: initial; }
+      .arn-bootstrap .hover-card-lg-reversible:hover .card-body .hovered-data {
+        opacity: 1;
+        overflow: hidden; }
   .arn-bootstrap button:focus,
   .arn-bootstrap button:active,
   .arn-bootstrap .btn:focus,
@@ -6429,3 +6705,5 @@ Primary style
     transition: box-shadow 0.3s ease-in-out !important; }
     .arn-bootstrap .raise-on-hover-lg:hover {
       box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; }
+  .arn-bootstrap .text-shadow {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
