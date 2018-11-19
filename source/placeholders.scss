@@ -1,0 +1,44 @@
+@keyframes color-animation {
+    0%   {
+        background-position: 0% 52%;
+    }
+    50%  {
+        background-position: 100% 49%;
+    }
+    100%   {
+        background-position: 0% 52%;
+    }
+}
+
+@mixin placeholder-base($width, $height) {
+    background: linear-gradient(271deg, #dadddc, #bdbbbb);
+    background-size: 400% 400%;
+    width: $width;
+    height: $height;
+    -webkit-animation: color-animation 1s ease infinite;
+    animation: color-animation 1s ease infinite;
+}
+
+.placeholder-line-sm {
+    @include placeholder-base($placeholder-line-all-width, $placeholder-line-sm-height);
+}
+
+.placeholder-line {
+    @include placeholder-base($placeholder-line-all-width, $placeholder-line-md-height);
+}
+
+.placeholder-line-lg {
+    @include placeholder-base($placeholder-line-all-width, $placeholder-line-lg-height);
+}
+
+.placeholder-cube-sm {
+    @include placeholder-base($placeholder-cube-sm-width, $placeholder-cube-sm-height);
+}
+
+.placeholder-cube {
+    @include placeholder-base($placeholder-cube-md-width, $placeholder-cube-md-height);
+}
+
+.placeholder-cube-lg {
+    @include placeholder-base($placeholder-cube-lg-width, $placeholder-cube-lg-height);
+}

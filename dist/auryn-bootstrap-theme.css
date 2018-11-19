@@ -6701,3 +6701,55 @@ Primary style
       box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; }
   .arn-bootstrap .text-shadow {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+
+@keyframes color-animation {
+  0% {
+    background-position: 0% 52%; }
+  50% {
+    background-position: 100% 49%; }
+  100% {
+    background-position: 0% 52%; } }
+  .arn-bootstrap .placeholder-line-sm {
+    background: linear-gradient(271deg, #dadddc, #bdbbbb);
+    background-size: 400% 400%;
+    width: 100%;
+    height: 0.5em;
+    -webkit-animation: color-animation 1s ease infinite;
+    animation: color-animation 1s ease infinite; }
+  .arn-bootstrap .placeholder-line {
+    background: linear-gradient(271deg, #dadddc, #bdbbbb);
+    background-size: 400% 400%;
+    width: 100%;
+    height: 0.65em;
+    -webkit-animation: color-animation 1s ease infinite;
+    animation: color-animation 1s ease infinite; }
+  .arn-bootstrap .placeholder-line-lg {
+    background: linear-gradient(271deg, #dadddc, #bdbbbb);
+    background-size: 400% 400%;
+    width: 100%;
+    height: 0.8em;
+    -webkit-animation: color-animation 1s ease infinite;
+    animation: color-animation 1s ease infinite; }
+  .arn-bootstrap .placeholder-cube-sm {
+    background: linear-gradient(271deg, #dadddc, #bdbbbb);
+    background-size: 400% 400%;
+    width: 7.5em;
+    height: 7.5em;
+    -webkit-animation: color-animation 1s ease infinite;
+    animation: color-animation 1s ease infinite; }
+  .arn-bootstrap .placeholder-cube {
+    background: linear-gradient(271deg, #dadddc, #bdbbbb);
+    background-size: 400% 400%;
+    width: 9.4em;
+    height: 9.4em;
+    -webkit-animation: color-animation 1s ease infinite;
+    animation: color-animation 1s ease infinite; }
+  .arn-bootstrap .placeholder-cube-lg {
+    background: linear-gradient(271deg, #dadddc, #bdbbbb);
+    background-size: 400% 400%;
+    width: 11.3em;
+    height: 11.3em;
+    -webkit-animation: color-animation 1s ease infinite;
+    animation: color-animation 1s ease infinite; }
+  .arn-bootstrap .border-dashed {
+    border-style: dashed !important; }
