@@ -367,8 +367,8 @@ Primary style
     overflow-y: scroll; }
   .arn-bootstrap .container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
     margin-right: auto;
     margin-left: auto; }
     @media (min-width: 576px) {
@@ -385,15 +385,15 @@ Primary style
         max-width: 1140px; } }
   .arn-bootstrap .container-fluid {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
     margin-right: auto;
     margin-left: auto; }
   .arn-bootstrap .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px; }
+    margin-right: -7.5px;
+    margin-left: -7.5px; }
   .arn-bootstrap .no-gutters {
     margin-right: 0;
     margin-left: 0; }
@@ -405,8 +405,8 @@ Primary style
     position: relative;
     width: 100%;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px; }
+    padding-right: 7.5px;
+    padding-left: 7.5px; }
   .arn-bootstrap .col {
     flex-basis: 0;
     flex-grow: 1;
@@ -2846,24 +2846,24 @@ Primary style
     display: flex;
     flex-direction: column; }
     .arn-bootstrap .card-deck .card {
-      margin-bottom: 15px; }
+      margin-bottom: 7.5px; }
     @media (min-width: 576px) {
       .arn-bootstrap .card-deck {
         flex-flow: row wrap;
-        margin-right: -15px;
-        margin-left: -15px; }
+        margin-right: -7.5px;
+        margin-left: -7.5px; }
         .arn-bootstrap .card-deck .card {
           display: flex;
           flex: 1 0 0%;
           flex-direction: column;
-          margin-right: 15px;
+          margin-right: 7.5px;
           margin-bottom: 0;
-          margin-left: 15px; } }
+          margin-left: 7.5px; } }
   .arn-bootstrap .card-group {
     display: flex;
     flex-direction: column; }
     .arn-bootstrap .card-group > .card {
-      margin-bottom: 15px; }
+      margin-bottom: 7.5px; }
     @media (min-width: 576px) {
       .arn-bootstrap .card-group {
         flex-flow: row wrap; }
