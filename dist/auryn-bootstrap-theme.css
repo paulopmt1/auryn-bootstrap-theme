@@ -6753,3 +6753,11 @@ Primary style
     animation: color-animation 1s ease infinite; }
   .arn-bootstrap .border-dashed {
     border-style: dashed !important; }
+  .arn-bootstrap .border-top-dashed {
+    border-top-style: dashed !important; }
+  .arn-bootstrap .border-right-dashed {
+    border-right-style: dashed !important; }
+  .arn-bootstrap .border-bottom-dashed {
+    border-bottom-style: dashed !important; }
+  .arn-bootstrap .border-left-dashed {
+    border-left-style: dashed !important; }
