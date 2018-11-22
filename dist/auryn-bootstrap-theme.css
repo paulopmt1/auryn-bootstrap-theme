@@ -382,7 +382,7 @@ Primary style
         max-width: 960px; } }
     @media (min-width: 1200px) {
       .arn-bootstrap .container {
-        max-width: 1140px; } }
+        max-width: 1240px; } }
   .arn-bootstrap .container-fluid {
     width: 100%;
     padding-right: 7.5px;
@@ -6701,6 +6701,10 @@ Primary style
       box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; }
   .arn-bootstrap .text-shadow {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+  .arn-bootstrap .ease-bottom-margin p,
+  .arn-bootstrap .ease-bottom-margin small,
+  .arn-bootstrap .ease-bottom-margin span {
+    margin-bottom: .1em; }
 
 @keyframes color-animation {
   0% {
