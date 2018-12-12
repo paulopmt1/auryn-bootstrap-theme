@@ -56,7 +56,7 @@ Primary style
   .arn-bootstrap body {
     margin: 0;
     font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-weight: 400;
     line-height: 1.5;
     color: #222;
@@ -255,19 +255,19 @@ Primary style
     line-height: 1.2;
     color: inherit; }
   .arn-bootstrap h1, .arn-bootstrap .h1 {
-    font-size: 2.5rem; }
+    font-size: 2.34375rem; }
   .arn-bootstrap h2, .arn-bootstrap .h2 {
-    font-size: 2rem; }
+    font-size: 1.875rem; }
   .arn-bootstrap h3, .arn-bootstrap .h3 {
-    font-size: 1.75rem; }
+    font-size: 1.640625rem; }
   .arn-bootstrap h4, .arn-bootstrap .h4 {
-    font-size: 1.5rem; }
+    font-size: 1.40625rem; }
   .arn-bootstrap h5, .arn-bootstrap .h5 {
-    font-size: 1.25rem; }
+    font-size: 1.171875rem; }
   .arn-bootstrap h6, .arn-bootstrap .h6 {
-    font-size: 1rem; }
+    font-size: 0.9375rem; }
   .arn-bootstrap .lead {
-    font-size: 1.25rem;
+    font-size: 1.171875rem;
     font-weight: 300; }
   .arn-bootstrap .display-1 {
     font-size: 6rem;
@@ -313,7 +313,7 @@ Primary style
     text-transform: uppercase; }
   .arn-bootstrap .blockquote {
     margin-bottom: 1rem;
-    font-size: 1.25rem; }
+    font-size: 1.171875rem; }
   .arn-bootstrap .blockquote-footer {
     display: block;
     font-size: 80%;
@@ -382,7 +382,7 @@ Primary style
         max-width: 960px; } }
     @media (min-width: 1200px) {
       .arn-bootstrap .container {
-        max-width: 1240px; } }
+        max-width: 1140px; } }
   .arn-bootstrap .container-fluid {
     width: 100%;
     padding-right: 7.5px;
@@ -1093,9 +1093,9 @@ Primary style
   .arn-bootstrap .form-control {
     display: block;
     width: 100%;
-    height: calc(2.25rem + 4px);
+    height: calc(2.15625rem + 4px);
     padding: 0.375rem 1rem;
-    font-size: 1rem;
+    font-size: 0.9375rem;
     line-height: 1.5;
     color: #666;
     background-color: #fff;
@@ -1137,12 +1137,12 @@ Primary style
   .arn-bootstrap .col-form-label-lg {
     padding-top: calc(0.5rem + 2px);
     padding-bottom: calc(0.5rem + 2px);
-    font-size: 1.25rem;
+    font-size: 1.171875rem;
     line-height: 1.5; }
   .arn-bootstrap .col-form-label-sm {
     padding-top: calc(0.25rem + 2px);
     padding-bottom: calc(0.25rem + 2px);
-    font-size: 0.875rem;
+    font-size: 0.8203125rem;
     line-height: 1.5; }
   .arn-bootstrap .form-control-plaintext {
     display: block;
@@ -1159,15 +1159,15 @@ Primary style
       padding-right: 0;
       padding-left: 0; }
   .arn-bootstrap .form-control-sm {
-    height: calc(1.8125rem + 4px);
+    height: calc(1.73046875rem + 4px);
     padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
+    font-size: 0.8203125rem;
     line-height: 1.5;
     border-radius: 0.1rem; }
   .arn-bootstrap .form-control-lg {
-    height: calc(2.875rem + 4px);
+    height: calc(2.7578125rem + 4px);
     padding: 0.5rem 1rem;
-    font-size: 1.25rem;
+    font-size: 1.171875rem;
     line-height: 1.5;
     border-radius: 0.15rem; }
   .arn-bootstrap select.form-control[size], .arn-bootstrap select.form-control[multiple] {
@@ -1224,7 +1224,7 @@ Primary style
     max-width: 100%;
     padding: 0.25rem 0.5rem;
     margin-top: .1rem;
-    font-size: 0.875rem;
+    font-size: 0.8203125rem;
     line-height: 1.5;
     color: #222;
     background-color: rgba(62, 208, 179, 0.9);
@@ -1293,7 +1293,7 @@ Primary style
     max-width: 100%;
     padding: 0.25rem 0.5rem;
     margin-top: .1rem;
-    font-size: 0.875rem;
+    font-size: 0.8203125rem;
     line-height: 1.5;
     color: #fff;
     background-color: rgba(217, 83, 79, 0.9);
@@ -1400,7 +1400,7 @@ Primary style
     user-select: none;
     border: 2px solid transparent;
     padding: 0.375rem 1rem;
-    font-size: 1rem;
+    font-size: 0.9375rem;
     line-height: 1.5;
     border-radius: 0.125rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
@@ -1833,12 +1833,12 @@ Primary style
       pointer-events: none; }
   .arn-bootstrap .btn-lg, .arn-bootstrap .btn-group-lg > .btn {
     padding: 0.5rem 1rem;
-    font-size: 1.25rem;
+    font-size: 1.171875rem;
     line-height: 1.5;
     border-radius: 0.15rem; }
   .arn-bootstrap .btn-sm, .arn-bootstrap .btn-group-sm > .btn {
     padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
+    font-size: 0.8203125rem;
     line-height: 1.5;
     border-radius: 0.1rem; }
   .arn-bootstrap .btn-block {
@@ -1895,7 +1895,7 @@ Primary style
     min-width: 10rem;
     padding: 0.5rem 0;
     margin: 0.125rem 0 0;
-    font-size: 1rem;
+    font-size: 0.9375rem;
     color: #222;
     text-align: left;
     list-style: none;
@@ -2010,7 +2010,7 @@ Primary style
     display: block;
     padding: 0.5rem 1.5rem;
     margin-bottom: 0;
-    font-size: 0.875rem;
+    font-size: 0.8203125rem;
     color: #888;
     white-space: nowrap; }
   .arn-bootstrap .dropdown-item-text {
@@ -2177,7 +2177,7 @@ Primary style
     align-items: center;
     padding: 0.375rem 1rem;
     margin-bottom: 0;
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-weight: 400;
     line-height: 1.5;
     color: #666;
@@ -2194,9 +2194,9 @@ Primary style
   .arn-bootstrap .input-group-lg > .input-group-append > .input-group-text,
   .arn-bootstrap .input-group-lg > .input-group-prepend > .btn,
   .arn-bootstrap .input-group-lg > .input-group-append > .btn {
-    height: calc(2.875rem + 4px);
+    height: calc(2.7578125rem + 4px);
     padding: 0.5rem 1rem;
-    font-size: 1.25rem;
+    font-size: 1.171875rem;
     line-height: 1.5;
     border-radius: 0.15rem; }
   .arn-bootstrap .input-group-sm > .form-control,
@@ -2204,9 +2204,9 @@ Primary style
   .arn-bootstrap .input-group-sm > .input-group-append > .input-group-text,
   .arn-bootstrap .input-group-sm > .input-group-prepend > .btn,
   .arn-bootstrap .input-group-sm > .input-group-append > .btn {
-    height: calc(1.8125rem + 4px);
+    height: calc(1.73046875rem + 4px);
     padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
+    font-size: 0.8203125rem;
     line-height: 1.5;
     border-radius: 0.1rem; }
   .arn-bootstrap .input-group > .input-group-prepend > .btn,
@@ -2228,7 +2228,7 @@ Primary style
   .arn-bootstrap .custom-control {
     position: relative;
     display: block;
-    min-height: 1.5rem;
+    min-height: 1.40625rem;
     padding-left: 1.5rem; }
   .arn-bootstrap .custom-control-inline {
     display: inline-flex;
@@ -2254,7 +2254,7 @@ Primary style
     margin-bottom: 0; }
     .arn-bootstrap .custom-control-label::before {
       position: absolute;
-      top: 0.25rem;
+      top: 0.203125rem;
       left: -1.5rem;
       display: block;
       width: 1rem;
@@ -2265,7 +2265,7 @@ Primary style
       background-color: #ddd; }
     .arn-bootstrap .custom-control-label::after {
       position: absolute;
-      top: 0.25rem;
+      top: 0.203125rem;
       left: -1.5rem;
       display: block;
       width: 1rem;
@@ -2299,7 +2299,7 @@ Primary style
   .arn-bootstrap .custom-select {
     display: inline-block;
     width: 100%;
-    height: calc(2.25rem + 4px);
+    height: calc(2.15625rem + 4px);
     padding: 0.375rem 1.75rem 0.375rem 0.75rem;
     line-height: 1.5;
     color: #666;
@@ -2326,12 +2326,12 @@ Primary style
     .arn-bootstrap .custom-select::-ms-expand {
       opacity: 0; }
   .arn-bootstrap .custom-select-sm {
-    height: calc(1.8125rem + 4px);
+    height: calc(1.73046875rem + 4px);
     padding-top: 0.375rem;
     padding-bottom: 0.375rem;
     font-size: 75%; }
   .arn-bootstrap .custom-select-lg {
-    height: calc(2.875rem + 4px);
+    height: calc(2.7578125rem + 4px);
     padding-top: 0.375rem;
     padding-bottom: 0.375rem;
     font-size: 125%; }
@@ -2339,13 +2339,13 @@ Primary style
     position: relative;
     display: inline-block;
     width: 100%;
-    height: calc(2.25rem + 4px);
+    height: calc(2.15625rem + 4px);
     margin-bottom: 0; }
   .arn-bootstrap .custom-file-input {
     position: relative;
     z-index: 2;
     width: 100%;
-    height: calc(2.25rem + 4px);
+    height: calc(2.15625rem + 4px);
     margin: 0;
     opacity: 0; }
     .arn-bootstrap .custom-file-input:focus ~ .custom-file-label {
@@ -2363,7 +2363,7 @@ Primary style
     right: 0;
     left: 0;
     z-index: 1;
-    height: calc(2.25rem + 4px);
+    height: calc(2.15625rem + 4px);
     padding: 0.375rem 1rem;
     line-height: 1.5;
     color: #666;
@@ -2377,7 +2377,7 @@ Primary style
       bottom: 0;
       z-index: 3;
       display: block;
-      height: 2.25rem;
+      height: 2.15625rem;
       padding: 0.375rem 1rem;
       line-height: 1.5;
       color: #666;
@@ -2551,10 +2551,10 @@ Primary style
       justify-content: space-between; }
   .arn-bootstrap .navbar-brand {
     display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
+    padding-top: 0.32421875rem;
+    padding-bottom: 0.32421875rem;
     margin-right: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.171875rem;
     line-height: inherit;
     white-space: nowrap; }
     .arn-bootstrap .navbar-brand:hover, .arn-bootstrap .navbar-brand:focus {
@@ -2581,7 +2581,7 @@ Primary style
     align-items: center; }
   .arn-bootstrap .navbar-toggler {
     padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
+    font-size: 1.171875rem;
     line-height: 1;
     background-color: transparent;
     border: 2px solid transparent;
@@ -2998,7 +2998,7 @@ Primary style
     border-color: #ddd; }
   .arn-bootstrap .pagination-lg .page-link {
     padding: 0.75rem 1.5rem;
-    font-size: 1.25rem;
+    font-size: 1.171875rem;
     line-height: 1.5; }
   .arn-bootstrap .pagination-lg .page-item:first-child .page-link {
     border-top-left-radius: 0.15rem;
@@ -3008,7 +3008,7 @@ Primary style
     border-bottom-right-radius: 0.15rem; }
   .arn-bootstrap .pagination-sm .page-link {
     padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
+    font-size: 0.8203125rem;
     line-height: 1.5; }
   .arn-bootstrap .pagination-sm .page-item:first-child .page-link {
     border-top-left-radius: 0.1rem;
@@ -3121,7 +3121,7 @@ Primary style
   .arn-bootstrap .alert-link {
     font-weight: 700; }
   .arn-bootstrap .alert-dismissible {
-    padding-right: 4rem; }
+    padding-right: 3.90625rem; }
     .arn-bootstrap .alert-dismissible .close {
       position: absolute;
       top: 0;
@@ -3210,7 +3210,7 @@ Primary style
     display: flex;
     height: 1rem;
     overflow: hidden;
-    font-size: 0.75rem;
+    font-size: 0.703125rem;
     background-color: #f6f6f6;
     border-radius: 0.125rem; }
   .arn-bootstrap .progress-bar {
@@ -3376,7 +3376,7 @@ Primary style
       border-color: #463568; }
   .arn-bootstrap .close {
     float: right;
-    font-size: 1.5rem;
+    font-size: 1.40625rem;
     font-weight: 700;
     line-height: 1;
     color: #888;
@@ -3518,7 +3518,7 @@ Primary style
     word-spacing: normal;
     white-space: normal;
     line-break: auto;
-    font-size: 0.875rem;
+    font-size: 0.8203125rem;
     word-wrap: break-word;
     opacity: 0; }
     .arn-bootstrap .tooltip.show {
@@ -3597,7 +3597,7 @@ Primary style
     word-spacing: normal;
     white-space: normal;
     line-break: auto;
-    font-size: 0.875rem;
+    font-size: 0.8203125rem;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: padding-box;
@@ -3685,7 +3685,7 @@ Primary style
   .arn-bootstrap .popover-header {
     padding: 0.5rem 0.75rem;
     margin-bottom: 0;
-    font-size: 1rem;
+    font-size: 0.9375rem;
     color: inherit;
     background-color: #f7f7f7;
     border-bottom: 2px solid #ebebeb;
