@@ -5783,7 +5783,6 @@ Primary style
         background: #ddd;
         border-radius: 50%;
         content: '';
-        cursor: pointer;
         text-align: center;
         z-index: 2; }
       .arn-bootstrap .wizard-step li ~ li::after, .arn-bootstrap .wizard-step-sm li ~ li::after {
@@ -6765,3 +6764,5 @@ Primary style
     border-bottom-style: dashed !important; }
   .arn-bootstrap .border-left-dashed {
     border-left-style: dashed !important; }
+  .arn-bootstrap .cursor-pointer {
+    cursor: pointer !important; }
