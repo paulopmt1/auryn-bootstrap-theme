@@ -14,7 +14,7 @@
             }
 
             .bs-docs-section + .bs-docs-section {
-                margin-top: 2em;
+                margin-top: 1.5em;
             }
 
             .bs-component + .bs-component {
@@ -1886,11 +1886,19 @@
                         <h2>Shadows</h2>
                     </div>
 
-                    <div class="bs-component">
-                        <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
-                        <div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</div>
-                        <div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
-                        <div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</div>
+                    <div class="bs-component row">
+                        <div class="col">
+                            <div class="shadow-none p-3 mb-5 bg-white text-center rounded">No shadow</div>
+                        </div>
+                        <div class="col">
+                            <div class="shadow-sm p-3 mb-5 bg-white text-center rounded">Small shadow</div>
+                        </div>
+                        <div class="col">
+                            <div class="shadow p-3 mb-5 bg-white text-center rounded">Regular shadow</div>
+                        </div>
+                        <div class="col">
+                            <div class="shadow-lg p-3 mb-5 bg-white text-center rounded">Larger shadow</div>
+                        </div>
                     </div>
 
                     <div class="bs-component">
@@ -1988,6 +1996,80 @@
                     <small>.placeholder-cube-sm</small><br><div class="placeholder-cube-sm mb-1"></div>
                     <small>.placeholder-cube</small><br><div class="placeholder-cube mb-1"></div>
                     <small>.placeholder-cube-lg</small><br><div class="placeholder-cube-lg mb-1"></div>
+                </div> <!--  .bs-docs-section -->
+
+                <div class="bs-docs-section shadow-sm">
+                    <div class="page-header">
+                        <h2 id="navbars">Spinners</h2>
+                    </div>
+                    
+                    <h6 id="navbars">Border spinner</h6>
+                    <div class="mb-3">
+                        <div class="spinner-border text-primary" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-secondary" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-success" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-danger" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-warning" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-info" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-light" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-dark" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                    
+                    <h6 id="navbars">Growing spinner</h6>
+                    <div class="mb-3">
+                        <div class="spinner-grow text-primary" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-secondary" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-success" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-danger" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-warning" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-info" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-light" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-dark" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+
+                    <h6 id="navbars">Buttons spinner</h6>
+                    <div>
+                        <button class="btn btn-primary" type="button" disabled>
+                          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                          Loading...
+                        </button>
+                        <button class="btn btn-primary" type="button" disabled>
+                          <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                          Loading...
+                        </button>
+                    </div>
                 </div> <!--  .bs-docs-section -->      
 
 
