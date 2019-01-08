@@ -2460,6 +2460,8 @@ Primary style
       background-color: #eee; }
     .arn-bootstrap .custom-file-input:lang(en) ~ .custom-file-label::after {
       content: "Browse"; }
+    .arn-bootstrap .custom-file-input:lang(pt-br) ~ .custom-file-label::after {
+      content: "Selecionar"; }
     .arn-bootstrap .custom-file-input ~ .custom-file-label[data-browse]::after {
       content: attr(data-browse); }
   .arn-bootstrap .custom-file-label {

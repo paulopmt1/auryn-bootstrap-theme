@@ -4,7 +4,8 @@
         <link rel="stylesheet" href="./dist/auryn-bootstrap-theme.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/esm/popper-utils.js"></script>
         <style>
 
             .bs-docs-section {
@@ -497,6 +498,12 @@
                             <div class="bs-component">
                                 <form>
                                     <fieldset>
+                                        <legend>Input lang</legend>
+                                        <div class="custom-file mb-3">
+                                            <input type="file" class="custom-file-input" id="customFileLang" lang="pt-br">
+                                            <label class="custom-file-label" for="customFileLang">Selecionar Arquivos</label>
+                                        </div>
+
                                         <legend>Legend</legend>
                                         <div class="form-group row">
                                             <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
