@@ -62,24 +62,14 @@ html * {
   @include box-sizing(border-box);
 }
 
-.arn-container {
+.arn-timeline {
   background-color: $background;
+  margin: 0;
   margin: 0;
   max-width: $large; 
   padding: 1em;
-  width: 100%;
-
-  &::after { /* clearfix */
-    clear: both;
-    content: '';
-    display: table;
-  }
-}
-
-#arn-timeline {
-  margin: 0;
-  padding: 1em;
   position: relative;
+  width: 100%;
 
   &::before {
     background: darken($background, 5%);
@@ -109,6 +99,12 @@ html * {
     @media screen and (min-width: 1200px) {
       left: 26px;
     }
+  }
+
+  &::after { /* clearfix */
+    clear: both;
+    content: '';
+    display: table;
   }
 }
 

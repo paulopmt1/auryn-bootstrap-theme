@@ -6889,22 +6889,15 @@ Primary style
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-  .arn-bootstrap .arn-container {
+  .arn-bootstrap .arn-timeline {
     background-color: #f5f5f5;
+    margin: 0;
     margin: 0;
     max-width: 1170px;
     padding: 1em;
+    position: relative;
     width: 100%; }
-    .arn-bootstrap .arn-container::after {
-      /* clearfix */
-      clear: both;
-      content: '';
-      display: table; }
-  .arn-bootstrap #arn-timeline {
-    margin: 0;
-    padding: 1em;
-    position: relative; }
-    .arn-bootstrap #arn-timeline::before {
+    .arn-bootstrap .arn-timeline::before {
       background: #e8e8e8;
       content: '';
       height: 100%;
@@ -6913,20 +6906,25 @@ Primary style
       top: 0;
       width: 4px; }
       @media screen and (max-width: 576px) {
-        .arn-bootstrap #arn-timeline::before {
+        .arn-bootstrap .arn-timeline::before {
           left: 26px; } }
       @media screen and (min-width: 576px) {
-        .arn-bootstrap #arn-timeline::before {
+        .arn-bootstrap .arn-timeline::before {
           left: 26px; } }
       @media screen and (min-width: 768px) {
-        .arn-bootstrap #arn-timeline::before {
+        .arn-bootstrap .arn-timeline::before {
           left: 26px; } }
       @media screen and (min-width: 992px) {
-        .arn-bootstrap #arn-timeline::before {
+        .arn-bootstrap .arn-timeline::before {
           left: 26px; } }
       @media screen and (min-width: 1200px) {
-        .arn-bootstrap #arn-timeline::before {
+        .arn-bootstrap .arn-timeline::before {
           left: 26px; } }
+    .arn-bootstrap .arn-timeline::after {
+      /* clearfix */
+      clear: both;
+      content: '';
+      display: table; }
   .arn-bootstrap .arn-timeline-block {
     position: relative;
     margin: 1em 0; }
