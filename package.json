@@ -1,6 +1,6 @@
 {
   "name": "auryn-bootstrap",
-  "version": "1.4.26",
+  "version": "1.4.27",
   "description": "Bootstrap Auryn - Versão Oficial",
   "main": "index.js",
   "scripts": {

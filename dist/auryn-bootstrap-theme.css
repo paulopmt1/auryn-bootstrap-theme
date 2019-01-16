@@ -6033,11 +6033,6 @@ Primary style
     box-shadow: none !important; }
   .arn-bootstrap .w-auto {
     width: auto !important; }
-  .arn-bootstrap .card .card-body form,
-  .arn-bootstrap .card .card-body .form-row,
-  .arn-bootstrap .card .card-body .form-groups {
-    border: 1px dashed #eee;
-    padding: 1.25rem; }
   .arn-bootstrap .card-columns.card-columns-sm .card {
     margin-bottom: 0.1rem; }
   @media (min-width: 576px) {
