@@ -115,6 +115,7 @@ $close-text-shadow:                 none !default;
 $theme-colors: () !default;
 $theme-colors: map-merge((
   "important":    $purple,
+  "clean":    $white,
 ), $theme-colors);
 
 // Card columns
