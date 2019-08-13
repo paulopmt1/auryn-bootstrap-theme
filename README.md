@@ -6,4 +6,4 @@ x = huge break-changes
 y = minor break-changes and small new features
 z = fixes
 
-[Demo](https://felipemengatto.github.io/auryn-bootstrap-theme/)
+[Demo](https://paulopmt1.github.io/auryn-bootstrap-theme/)
