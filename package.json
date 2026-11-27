@@ -15,12 +15,12 @@
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-sass": "^2.1.0",
+    "grunt-sass": "^4.1.0",
     "load-grunt-tasks": "^3.5.2",
-    "node-sass": "^4.7.2"
+    "node-sass": "^9.0.0"
   },
   "dependencies": {
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^5.0.0",
     "node-bourbon": "^4.2.8"
   }
 }
